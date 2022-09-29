@@ -1,0 +1,438 @@
+/* HOME */
+.mainIconBox {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: var(--medium-padding);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.mainEachIconBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 5% 5% 10%;
+    border-radius: calc(2 * var(--medium-padding));
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.mainEachIconBox_dead {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 5% 5% 10%;
+    border-radius: calc(2 * var(--medium-padding));
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+    border: 0.2rem solid var(--deep-dark-gray-color);
+    background: linear-gradient(to bottom right,
+            var(--gray-color),
+            var(--dark-gray-color));
+    transition: all 0.25s ease-in-out;
+}
+
+.mainIconImage {
+    width: 90%;
+    transition: width 0.25s ease-in-out;
+    display: flex;
+}
+
+.mainEachIconBox:hover .mainIconImage {
+    width: 95%;
+    filter: drop-shadow(0rem 0rem 2rem var(--white-transparent-color));
+}
+
+.iconBoxIndigo {
+    border: 0.2rem solid #1e2432;
+    background: linear-gradient(to bottom right, #C6CEDD, #2c3248);
+    transition: all 0.25s ease-in-out;
+}
+
+.iconBoxIndigo:hover {
+    background: linear-gradient(to bottom right, #C6CEDD, #1e2432);
+}
+
+.iconBoxRed {
+    border: 0.2rem solid #6e061b;
+    background: linear-gradient(to bottom right, #c995a0, #b20a2c);
+    transition: all 0.25s ease-in-out;
+}
+
+.iconBoxRed:hover {
+    background: linear-gradient(to bottom right, #c995a0, #6e061b);
+}
+
+.iconBoxGreen {
+    border: 0.2rem solid #083515;
+    background: linear-gradient(to bottom right, #93F9B9, #075A07);
+    transition: all 0.25s ease-in-out;
+}
+
+.iconBoxGreen:hover {
+    background: linear-gradient(to bottom right, #93F9B9, #083515);
+}
+
+.iconBoxPurple {
+    border: 0.2rem solid #340a4b;
+    background: linear-gradient(to bottom right, #CBB4D4, #461a5d);
+    transition: all 0.25s ease-in-out;
+}
+
+.iconBoxPurple:hover {
+    background: linear-gradient(to bottom right, #CBB4D4, #340a4b);
+}
+
+.iconBoxYellow {
+    border: 0.2rem solid #ae620b;
+    background: linear-gradient(to bottom right, #EDE496, #CB7903);
+    transition: all 0.25s ease-in-out;
+}
+
+.iconBoxYellow:hover {
+    background: linear-gradient(to bottom right, #EDE496, #ae620b);
+}
+
+.iconBoxBlue {
+    border: 0.2rem solid #03394b;
+    background: linear-gradient(to bottom right, #b5ecff, #06546F);
+    transition: all 0.25s ease-in-out;
+}
+
+.iconBoxBlue:hover {
+    background: linear-gradient(to bottom right, #b5ecff, #03394b);
+}
+
+.mainIconButton {
+    color: white;
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+.iconButtonIndigo {
+    text-shadow: 0.15rem 0 #1e2432, 0 0.15rem #1e2432, 0.15rem 0 #1e2432,
+        0 -0.15rem #1e2432;
+    transition: text-shadow 0.25s ease-in-out;
+}
+
+.iconButtonRed {
+    text-shadow: 0.15rem 0 #6e061b, 0 0.15rem #6e061b, 0.15rem 0 #6e061b,
+        0 -0.15rem #6e061b;
+    transition: text-shadow 0.25s ease-in-out;
+}
+
+.iconButtonGreen {
+    text-shadow: 0.15rem 0 #083515, 0 0.15rem #083515, 0.15rem 0 #083515,
+        0 -0.15rem #083515;
+    transition: text-shadow 0.25s ease-in-out;
+}
+
+.iconButtonPurple {
+    text-shadow: 0.15rem 0 #340a4b, 0 0.15rem #340a4b, 0.15rem 0 #340a4b,
+        0 -0.15rem #340a4b;
+    transition: text-shadow 0.25s ease-in-out;
+}
+
+.iconButtonYellow {
+    text-shadow: 0.15rem 0 #ae620b, 0 0.15rem #ae620b, 0.15rem 0 #ae620b,
+        0 -0.15rem #ae620b;
+    transition: text-shadow 0.25s ease-in-out;
+}
+
+.iconButtonBlue {
+    text-shadow: 0.15rem 0 #03394b, 0 0.15rem #03394b, 0.15rem 0 #03394b,
+        0 -0.15rem #03394b;
+    transition: text-shadow 0.25s ease-in-out;
+}
+
+
+/*
+  .mainEachIconBox:hover .iconButtonYellow {
+    text-shadow: 0.15rem 0 #945c09, 0 0.15rem #945c09, 0.15rem 0 #945c09,
+      0 -0.15rem #945c09;
+  }
+  */
+
+.iconButtonGray {
+    text-shadow: -0.15rem 0 var(--deep-dark-gray-color),
+        0 0.15rem var(--deep-dark-gray-color), 0.15rem 0 var(--deep-dark-gray-color),
+        0 -0.15rem var(--deep-dark-gray-color);
+}
+
+.homeUtilBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.homeAnnouncementBox {
+    width: 100%;
+    height: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeUtilBoxSubtitle {
+    width: 100%;
+    font-size: var(--big-font);
+    color: var(--yellow-color);
+    margin-bottom: var(--medium-padding);
+}
+
+.homeAnnouncement {
+    width: 96%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-right: 4%;
+}
+
+.homeAnnouncement::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.homeAnnouncement::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.homeAnnouncementEach {
+    font-size: var(--medium-font);
+    padding-bottom: calc(0.5 * var(--medium-padding));
+    margin-bottom: calc(0.5 * var(--medium-padding));
+    border-bottom: 0.05rem dashed var(--dark-gray-color);
+    cursor: pointer;
+}
+
+.homeAnnouncementEach:hover {
+    text-shadow: 0rem 0rem 0.2rem var(--white-transparent-color);
+}
+
+.homeAnnouncementEach:last-child {
+    border-bottom: none;
+}
+
+.homeCommunicationBox {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeCommunication {
+    width: 96%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.homeCommunicationGrid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: calc(0.5 * var(--medium-padding));
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.homeCommunicationGridEachBox {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /*border: 0.15rem solid orange;*/
+    /*background: linear-gradient(
+      to bottom right,
+      rgb(255, 248, 237),
+      rgb(192, 184, 171)
+    );*/
+    background: linear-gradient(to bottom right,
+            var(--gray-color),
+            var(--dark-gray-color));
+    cursor: pointer;
+    color: black;
+}
+
+.homeCommunicationGridEachBox:hover {
+    background: linear-gradient(to bottom right,
+            var(--gray-color),
+            var(--deep-dark-gray-color));
+    color: white;
+    text-shadow: 0rem 0rem 0.05rem var(--white-transparent-color);
+    transition: all 0.25s ease-in-out;
+}
+
+.homeCommunicationGridEachBox:hover .image100 {
+    filter: drop-shadow(0rem 0rem 0.25rem var(--white-transparent-color));
+}
+
+.homeComuIconBox {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeComuIconTag {
+    font-size: var(--micro-font);
+}
+
+.homeBannerBox {
+    width: 100%;
+    height: 36%;
+}
+
+.bannerImageBox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+
+    /* HOME */
+    .mainIconBox {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-gap: var(--medium-padding);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .mainEachIconBox {
+        padding: 0% 0% 5%;
+        border-radius: 4rem;
+        justify-content: space-around;
+    }
+
+    .mainEachIconBox_dead {
+        padding: 0% 0% 5%;
+        border-radius: 4rem;
+        justify-content: space-around;
+    }
+
+    .mainIconImage {
+        width: 76%;
+        display: flex;
+    }
+
+    .mainEachIconBox:hover .mainIconImage {
+        width: 80%;
+        filter: drop-shadow(0rem 0rem 2rem var(--white-transparent-color));
+    }
+
+    .mainIconButton {
+        color: white;
+        background-color: transparent;
+        font-size: 4rem;
+    }
+
+    .homeUtilBox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .homeAnnouncementBox {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .homeUtilBoxSubtitle {
+        width: 100%;
+        font-size: var(--big-font);
+        margin-bottom: var(--medium-padding);
+    }
+
+    .homeAnnouncement::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .homeAnnouncement::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .homeAnnouncementEach {
+        font-size: var(--medium-font);
+        padding-bottom: var(--medium-padding);
+        margin-bottom: var(--medium-padding);
+        border-bottom: 0.4rem dashed var(--dark-gray-color);
+        cursor: pointer;
+    }
+
+    .homeCommunicationBox {
+        width: 100%;
+        height: 36%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .homeCommunication {
+        width: 96%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homeCommunicationGrid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-gap: var(--medium-padding);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .homeCommunicationGridEachBox {
+        width: 100%;
+        height: 100%;
+        border-radius: 4rem;
+    }
+
+    .homeComuIconBox {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homeComuIconTag {
+        font-size: var(--micro-font);
+    }
+
+    .homeBannerBox {
+        width: 100%;
+        height: 32%;
+    }
+}

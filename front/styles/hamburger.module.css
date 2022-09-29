@@ -1,0 +1,170 @@
+.menuTrigger{
+  display:none;
+}
+
+.menuWholeBox{
+  display:none;
+}
+
+.menuWholeBoxGone{
+  display:none;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  
+  .menuTrigger{
+      width: 7rem;
+      height: 6rem;
+      position: relative;
+      display: block;
+      z-index:10001;
+      transition: all .4s;
+  }
+
+  .headerStop{
+      position: fixed;
+  }
+
+  .menuTrigger span{
+      position: absolute;
+      left:0;
+      width:100%;
+      height: 0.8rem;
+      background-color: white;
+      border-radius: 5px;
+      transition: all .4s;
+  }
+
+  .menuTrigger span:nth-of-type(1) {
+      top: 0;
+  }
+  
+  .menuTrigger span:nth-of-type(2) {
+      top: 2.6rem;
+  }
+  
+  .menuTrigger span:nth-of-type(3) {
+      bottom: 0;
+  }
+
+  .menuTrigger.menuOn span:nth-of-type(1) {
+      transform: translateY(2.6rem) rotate(-45deg);
+  }
+      
+  .menuTrigger.menuOn span:nth-of-type(2) {
+      opacity: 0;
+  }
+      
+  .menuTrigger.menuOn span:nth-of-type(3) {
+      transform: translateY(-2.6rem) rotate(45deg);
+  }
+
+  .menuWholeBox{
+      display: flex;
+      z-Index:10000;
+      position: fixed;
+      top:0;
+      left:0;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      animation-name: fadeIn;
+      animation-duration: 500ms;
+  }
+
+  .menuWholeBoxGone{
+      display: flex;
+      z-Index:10000;
+      position: fixed;
+      top:0;
+      left:100vw;
+      width: 100vw;
+      height: 100vh;
+      background-color: black;
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      animation-name: fadeOut;
+      animation-duration: 500ms;
+  }
+
+  .menuEach{
+      font-size: 6rem;
+      margin: 4.5rem 0rem;
+  }
+
+  .topLogo{
+      z-index: 10001;
+      position: absolute;
+      display: flex;
+      height: 16rem;
+      top: 0;
+      left: 3rem;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .menuLink{
+      width: 70%;
+      height: 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      bottom: 4rem;
+  }
+
+  .topLogoIcon{
+      width: 10rem;
+      height: 10rem;
+  }
+
+  .menuIcon {
+      width: 7.5rem;
+      height: 7.5rem;
+  }
+
+  .menuLetter{
+      margin-left: 1rem;
+      font-size: 5rem;
+      font-style: italic;
+  }
+}
+
+@media screen and (max-width: 376px) and (orientation: portrait) {
+  
+  .menuEach{
+      font-size: 6rem;
+      margin: 5rem 0rem;
+  }
+
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateX(100vw);
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+      transform: translateX(-100vw);
+  }
+
+  100% {
+      opacity: 0;
+  }
+}

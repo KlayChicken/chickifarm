@@ -1,0 +1,3081 @@
+.whole {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+  background-color: rgba(0, 0, 0, 0.25);
+
+  animation-name: fadeIn;
+  animation-duration: 500ms;
+}
+
+.linkDes {
+  color: #6B6B6C;
+  text-decoration: underline;
+}
+
+.modal {
+  width: 52.5vw;
+  height: 32.8vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 10002;
+  border-radius: var(--medium-padding);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0rem 0rem 0.5rem 0.25rem rgb(32 33 36 / 28%);
+  overflow: hidden;
+
+  animation-name: fadeUp;
+  animation-duration: 500ms;
+}
+
+.QRmodal {
+  width: 52.5vw;
+  height: 32.8vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 10003;
+  border-radius: var(--medium-padding);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0rem 0rem 0.5rem 0.25rem rgb(32 33 36 / 28%);
+  overflow: hidden;
+
+  animation-name: fadeUp;
+  animation-duration: 500ms;
+}
+
+.modalContentTitle {
+  width: 90%;
+  height: 10%;
+  color: black;
+  font-size: var(--big-font);
+}
+
+.modalContentNFTGridBox {
+  width: 90%;
+  height: 85%;
+  overflow-y: scroll;
+  padding: 2%;
+}
+
+.modalContentNFTGrid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap: var(--medium-padding);
+}
+
+.modalContentNFTGridBox::-webkit-scrollbar {
+  width: 0.15rem;
+  height: 0.15rem;
+  background: var(--dark-gray-color);
+}
+
+.modalContentNFTGridBox::-webkit-scrollbar-thumb {
+  width: 0.15rem;
+  height: 0.15rem;
+  background: var(--gray-color);
+}
+
+.modalCloseDiv {
+  width: 100%;
+  background-color: var(--yellow-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0rem calc(0.5 * var(--medium-padding));
+  height: 10%;
+}
+
+.modalCloseBox {
+  width: 1.7rem;
+  cursor: pointer;
+  margin-top: 0.2rem;
+}
+
+.utilModalContent {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 6%;
+  color: black;
+}
+
+.modalContent {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 7% 7%;
+}
+
+/* SMALL */
+.smallModal {
+  width: 36vw;
+  height: 20vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 10003;
+  border-radius: var(--medium-padding);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0rem 0rem 0.5rem 0.25rem rgb(32 33 36 / 28%);
+  overflow: hidden;
+
+  animation-name: fadeUp;
+  animation-duration: 500ms;
+}
+
+.smallModalCloseDiv {
+  width: 100%;
+  background-color: var(--yellow-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0rem calc(0.5 * var(--medium-padding));
+  height: 15%;
+}
+
+.smallModalCloseBox {
+  width: 1.5rem;
+  cursor: pointer;
+  margin-top: 0.2rem;
+}
+
+.smallModalContent {
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem 2rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.smallModalContentTitle {
+  width: 90%;
+  height: 8rem;
+  color: black;
+  font-size: var(--big-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: pre-wrap;
+  line-height: calc(1.5*var(--big-font));
+}
+
+.smallModalJustAlertDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.smallModalConfirmAlertDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.smallModalButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 6rem;
+  height: 2.2rem;
+  cursor: pointer;
+  font-size: var(--big-font);
+}
+
+/* NOTIFICATION */
+
+.notificationBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.notificationHeader {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.01rem var(--gray-color) solid;
+}
+
+.notificationsTab {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.notificationsTabEach {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--big-font);
+  color: var(--dark-gray-color);
+  position: relative;
+  cursor: pointer;
+}
+
+.notificationsTabEach_selected {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--big-font);
+  border-bottom: 0.2rem black solid;
+  position: relative;
+  color: black;
+}
+
+.notificationAlarmOn {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: var(--red-color);
+  border-radius: 0.2rem;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.notificationHeaderLastCheck {
+  color: var(--gray-color);
+  font-size: var(--medium-font);
+}
+
+.notificationsDiv {
+  width: 100%;
+  height: 85%;
+  padding: 2%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.notificationsDiv::-webkit-scrollbar {
+  width: 0.15rem;
+  height: 0.15rem;
+  background: var(--gray-color);
+}
+
+.notificationsDiv::-webkit-scrollbar-thumb {
+  width: 0.15rem;
+  height: 0.15rem;
+  background: var(--dark-gray-color);
+}
+
+.notifications_guestBook {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 2%;
+  justify-content: space-between;
+  border-bottom: 0.01rem var(--gray-color) solid;
+  cursor: pointer;
+}
+
+.notifications_guestBook_blue {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(10, 10, 203, 0.1);
+  padding: 2%;
+  justify-content: space-between;
+  border-bottom: 0.01rem var(--gray-color) solid;
+  cursor: pointer;
+}
+
+.notifications_guestBook:last-child {
+  border-bottom: none;
+}
+
+.notifications_guestBook:hover,
+.notifications_guestBook_blue:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.notification_repChickiz {
+  width: 3rem;
+}
+
+.notification_guestBookMain {
+  width: 100%;
+}
+
+.notification_guestBookContent {
+  width: 70%;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.notification_guestBookText {
+  font-size: var(--medium-font);
+  color: var(--dark-gray-color);
+}
+
+.notificationsTime {
+  color: var(--dark-gray-color);
+}
+
+
+.notifications_likeNeighbor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1% 2%;
+  justify-content: space-between;
+  border-bottom: 0.01rem var(--gray-color) solid;
+  cursor: pointer;
+}
+
+.notifications_likeNeighbor_blue {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(10, 10, 203, 0.1);
+  padding: 1% 2%;
+  justify-content: space-between;
+  border-bottom: 0.01rem var(--gray-color) solid;
+  cursor: pointer;
+}
+
+.notifications_likeNeighbor:last-child {
+  border-bottom: none;
+}
+
+.notifications_likeNeighbor:hover,
+.notifications_likeNeighbor_blue:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.notifications_likeNeighborContent {
+  width: 70%;
+}
+
+.notifications_announce {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3% 2%;
+  justify-content: space-between;
+  border-bottom: 0.01rem var(--gray-color) solid;
+  cursor: pointer;
+}
+
+.notifications_announce_blue {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(10, 10, 203, 0.1);
+  padding: 3% 2%;
+  justify-content: space-between;
+  border-bottom: 0.01rem var(--gray-color) solid;
+  cursor: pointer;
+}
+
+.notifications_announce:last-child {
+  border-bottom: none;
+}
+
+.notifications_announce:hover,
+.notifications_announce_blue:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.notifications_announceContent {
+  width: 80%;
+}
+
+/* NFT */
+.nftModalContent {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 7%;
+  color: black;
+}
+
+.nftModalLeftBox {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nftModalRightBox {
+  width: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nftModalImageBox {
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nftModalNameBox {
+  width: 100%;
+  height: 6.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nftModalName {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+
+.nftModalOpenseaButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nftModalOpenseaISBox:hover {
+  background: linear-gradient(to bottom right,
+      rgb(255, 248, 237),
+      rgb(158, 143, 120));
+}
+
+.nftModalOpenseaISBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.7rem;
+  width: 7rem;
+  background: linear-gradient(to bottom right, rgb(255, 248, 237), rgb(192, 184, 171));
+  border: 0.1rem solid rgb(255, 248, 237);
+  border-radius: 2rem;
+  padding: 0rem 0.6rem 0rem 0.4rem;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.nftModalOpenseaISBox_gray {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.7rem;
+  width: 7rem;
+  background-color: #8e8e8e;
+  border: 0.1rem solid rgb(255, 248, 237);
+  border-radius: 2rem;
+  padding: 0rem 0.6rem 0rem 0.4rem;
+  transition: all 0.25s ease-in-out;
+}
+
+.nftModalOpenseaISBox_gray>span {
+  color: var(--gray-color);
+}
+
+.nftModalOpenseaISBox:hover .nftModalOpenseaSpan {
+  color: white;
+  text-shadow: 0rem 0rem 0.2rem white;
+}
+
+.nftModalOpenseaIconBox {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-right: 0.3rem;
+}
+
+.nftModalOpenseaSpan {
+  color: black;
+  font-size: var(--medium-font);
+}
+
+/*
+.nftModalTraitBox {
+  width: 100%;
+  height: 15rem;
+  display: grid;
+  gap: calc(0.5 * var(--medium-padding));
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+*/
+
+.nftModalTraitBox {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: calc(0.75 * var(--medium-padding));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.nftModalGrid {
+  width: 100%;
+  height: 100%;
+  border: 0.05rem solid black;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem 0rem;
+  justify-content: space-between;
+}
+
+.nftModalTraitType {
+  font-size: var(--micro-font);
+  text-align: center;
+  color: var(--dark-gray-color);
+}
+
+.nftModalTraitValue {
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+}
+
+.nftModalDescriptionBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nftModalSubtitle {
+  color: black;
+  font-size: calc(1.2*var(--big-font));
+}
+
+.nftModalDesc {
+  font-size: calc(1.2*var(--medium-font));
+  margin-top: var(--medium-padding);
+  color: black;
+  line-height: calc(1.8*var(--medium-font));
+}
+
+/* otherNFTModal */
+.otherNftModalImage100 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nftModalImageBox>span {
+  overflow: hidden !important;
+}
+
+.otherNFTModalETCWhole {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.otherNFTModalProjectNameWhole {
+  width: 100%;
+  height: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.otherNFTModalProjectNameWhole_transfer {
+  width: 100%;
+  height: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.otherNFTModalProjectNameWhole_transferResult {
+  width: auto;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.otherNFTModalProjectNameWhole_transferResult .otherNFTModalProjectName {
+  font-size: 0.6rem;
+}
+
+.otherNFTModalProjectNameWhole_transferResult .otherNFTModalProjectNameEach {
+  font-size: 1.1rem;
+}
+
+.otherNFTModalProjectName {
+  font-size: 0.9rem;
+  color: var(--dark-gray-color);
+}
+
+.otherNFTModalProjectNameEach {
+  font-size: 1.5rem;
+}
+
+.otherNFTModalLinkBox {
+  width: 100%;
+  height: 2.5rem;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.otherNFTModalLinkEach {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.otherNFTModalTraitBox_Whole {
+  width: 100%;
+  height: 100%;
+  padding: 0rem 1rem 0rem 0.5rem;
+  overflow-y: scroll;
+}
+
+.otherNFTModalTraitBox_Whole::-webkit-scrollbar {
+  width: 0.15rem;
+  height: 0.15rem;
+  background: var(--gray-color);
+}
+
+.otherNFTModalTraitBox_Whole::-webkit-scrollbar-thumb {
+  width: 0.15rem;
+  height: 0.15rem;
+  background: var(--dark-gray-color);
+}
+
+.otherNFTModalTraitBox_Grid {
+  width: 100%;
+  display: grid;
+  gap: calc(0.75 * var(--medium-padding));
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.otherNFTModalGrid {
+  width: 100%;
+  height: 4rem;
+  border: 0.05rem solid black;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem 0rem;
+  justify-content: space-between;
+}
+
+.otherNFTModalTraitType {
+  font-size: var(--micro-font);
+  text-align: center;
+  color: var(--dark-gray-color);
+}
+
+.otherNFTModalTraitValue {
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+  white-space: break-spaces;
+  word-break: break-all;
+}
+
+.otherNFTModalNoTraitBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otherNFTModalNoTrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TRANSFER */
+
+.transferDiv {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  padding: 5% 7%;
+}
+
+.transferTitleBox {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transferTitle {
+  font-size: calc(var(--big-font)*1.5);
+}
+
+.transferInputBox {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transferLeftBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 15rem;
+  height: 100%;
+}
+
+.otherNFTtransferLeftBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 15rem;
+  height: 100%;
+}
+
+.addressInputBox {
+  width: 28rem;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.addressInputDiv {
+  width: 28rem;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.transferImageBox {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addressTitle {
+  font-size: calc(var(--big-font)*1.3);
+}
+
+.transferNftName {
+  width: 100%;
+  font-size: 1.7rem;
+  text-align: center;
+  color: black;
+}
+
+.otherTransferNftName {
+  width: 100%;
+  height: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.addressInput {
+  background-color: transparent;
+  border: 0.1rem solid var(--dark-gray-color);
+  border-radius: 0.2rem;
+  color: black;
+  font-size: calc(var(--medium-font)*1.2);
+  width: 100%;
+  height: 3rem;
+  padding: 0rem 1rem;
+}
+
+.notice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28rem;
+  height: 25%;
+}
+
+.noticeBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 28rem;
+  height: 27%;
+}
+
+.noticeDiv {
+  display: flex;
+  align-items: center;
+}
+
+.noticeSpan {
+  color: var(--red-color);
+  font-size: var(--medium-font);
+}
+
+.noticeImgBox {
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+
+.transferLoadingBox {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.transferBtn {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transferBtnSpan {
+  font-size: calc(1.1*var(--big-font));
+}
+
+.transferBtnBox {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.AInputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28rem;
+  height: 100%;
+}
+
+.otherNFTAInputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 28rem;
+  height: 100%;
+}
+
+.QAInputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 28rem;
+  height: 100%;
+}
+
+.quanTitle {
+  font-size: calc(var(--big-font)*1.3);
+}
+
+.quanSub {
+  color: var(--dark-gray-color);
+  font-size: 1rem;
+}
+
+.addressHave {
+  font-size: calc(var(--medium-font)*1.2);
+}
+
+.quanInputBox {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* TRANSFER RESULT */
+
+.transferResult {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  padding: 3.5% 7%;
+}
+
+.transferResultBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transferResultDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transferResultTitleBox {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transfetResultCheckImgBox {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.transferResultTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transferResultTitleSpan {
+  font-size: calc(var(--big-font)*1.3);
+}
+
+.transferResultNftInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transferResultImgBox {
+  width: 15rem;
+  height: 15rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hyperLink {
+  color: rgb(0 105 255) !important;
+  text-decoration: underline !important;
+}
+
+.transfetResultNftNameSpan {
+  font-size: 1.7rem;
+}
+
+.transferResultHash {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transferResultHashSpan {
+  font-size: calc(var(--big-font)*1.1);
+}
+
+/* CHICKIBALL */
+.chickiballHowToPlayBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+
+.chickiballHowToPlayTitle {
+  width: 65%;
+  height: 8%;
+  font-size: var(--big-font);
+}
+
+.chickiballExBox {
+  width: 50%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chickiballExTitle {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.chickiballExSpan {
+  width: 90%;
+}
+
+.chickiballExImage {
+  width: 16rem;
+  height: 3rem;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.chickiballExImageTry {
+  background-color: white;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.chickiballExImageResult1 {
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: rgb(242, 242, 30);
+  font-weight: bold;
+}
+
+.chickiballExImageResult2 {
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: rgb(58, 214, 58);
+  font-weight: bold;
+}
+
+.chickiballExImageResult3 {
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  color: rgb(238, 29, 29);
+  font-weight: bold;
+}
+
+.chickiballHTRBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--big-font);
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.chickiballHTRTitle {
+  font-size: calc(var(--big-font)*1.3);
+}
+
+.chickiballHTRDes {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+  margin: calc(var(--medium-padding)*1.5) 0 calc(var(--medium-padding)*2.5) 0;
+}
+
+.chickiballHTRFooter {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
+}
+
+.chickiballHTRButton {
+  width: 60%;
+  margin-top: 1rem;
+  height: 2rem;
+  align-self: center;
+  font-size: 1.2rem;
+}
+
+.chickiballHowToPlayFooter {
+  width: 60%;
+  height: 8%;
+  font-size: var(--big-font);
+  display: flex;
+  align-items: flex-end;
+}
+
+.bugBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--big-font);
+  color: black;
+}
+
+.chickiballFAQ {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chickiballFAQBox {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chickiballFAQEach {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.chickiballScore {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chickiballTable {
+  border: 0.01rem solid black;
+  color: black !important;
+  width: 90%;
+  height: 70%;
+  border-collapse: collapse;
+}
+
+.chickiballTd {
+  color: black;
+  border: 0.01rem solid black;
+  text-align: center;
+}
+
+.chickiballModalContentTitle,
+.chickiballModalContentFooter {
+  width: 90%;
+  color: black;
+  font-size: var(--big-font);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5rem;
+}
+
+/* guestBook */
+.guestBookBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.guestBookInputLength {
+  width: 90%;
+  height: 10%;
+  text-align: right;
+  font-size: var(--big-font);
+  color: var(--dark-gray-color);
+}
+
+.guestBookInput {
+  width: 90%;
+  height: 70%;
+  border: 0;
+  font-size: var(--big-font);
+  line-height: 1.5rem;
+  border: 0.1rem solid var(--dark-gray-color);
+  border-radius: 0.2rem;
+  padding: var(--medium-font) 0 0 var(--medium-font);
+  resize: none;
+}
+
+.guestBookInput:focus {
+  outline: none;
+}
+
+.guestBookButtonBox {
+  width: 90%;
+  height: 15%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.guestBookButton {
+  padding: 0.4rem 0.6rem;
+  font-size: var(--big-font);
+}
+
+.greenButton {
+  background-color: var(--green-color);
+  color: white;
+  transition: all 0.25s ease-in-out;
+}
+
+.greenButton:hover {
+  background-color: var(--green-hover-color);
+  text-shadow: 0rem 0rem 0.2rem var(--white-transparent-color);
+}
+
+/* farm */
+.farmTable {
+  border: 0.01rem solid black;
+  color: black !important;
+  width: 70%;
+  height: 88%;
+  border-collapse: collapse;
+}
+
+.farmQuestion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.farmTableTd {
+  color: black;
+  border: 0.01rem solid black;
+  text-align: center;
+}
+
+.farmTableTd_rank {
+  color: white;
+  border: 0.01rem solid black;
+  text-align: center;
+}
+
+.farmTableThead {
+  height: 13% !important;
+}
+
+.farmTableTbody {
+  height: 87% !important;
+}
+
+.farmTableTh:nth-child(1) {
+  border: 0.01rem solid black;
+  background-color: var(--gray-color);
+  width: 20%;
+  font-size: var(--big-font);
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.farmTableTh:nth-child(2) {
+  border: 0.01rem solid black;
+  background-color: var(--gray-color);
+  width: 60%;
+  font-size: var(--big-font);
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* login */
+
+.loginModalTitleBox {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginModalTitle {
+  font-size: calc(var(--big-font)*1.8);
+  color: black;
+}
+
+.loginModalBtnBox {
+  width: 80%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginModalBtn {
+  width: 80%;
+  height: 30%;
+  margin-bottom: 1rem;
+  background-color: rgb(111, 101, 88);
+}
+
+.loginModalBtn:nth-child(1) {
+  color: white;
+}
+
+.loginModalBtn:nth-child(2) {
+  background-color: rgb(254, 229, 0);
+}
+
+.loginBtnBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginKaikasBtnDiv {
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginKlipBtnDiv {
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginBtnImage {
+  margin-right: 1rem !important;
+}
+
+.loginBtnDes {
+  font-size: var(--big-font);
+}
+
+.klipTQBox {
+  width: 100%;
+  height: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.klipTitleBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.klipTitleDiv {
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.klipTitleImg {
+  margin-right: 1rem !important;
+}
+
+.klipTitleSpan {
+  font-size: var(--big-font);
+}
+
+.klipQrBox {
+  width: 14rem;
+  height: 14rem;
+}
+
+.klipQrBox>Canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.klipDBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 27.5%;
+  color: black;
+}
+
+.klipDesBox {
+  width: 50%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.klipDesISBox {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+  height: 100%;
+}
+
+.klipDesIconBox {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.klipDesSpan {
+  font-size: calc(var(--medium-font)*1.1);
+}
+
+.klipDesImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* TODAY CHICKEN */
+
+.rouletteDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.rouletteHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 15%;
+  font-size: calc(var(--big-font)*1.2);
+}
+
+.rouletteDes {
+  color: gray;
+}
+
+.rouletteBox {
+  background-image: url(../src/image/land/screen.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.rouletteUlBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.rouletteList {
+  width: 100%;
+  height: 100%;
+}
+
+.rouletteListSlide {
+  animation-name: slide;
+  animation-duration: 3.5s;
+  animation-timing-function: cubic-bezier(.29, .64, .37, 1.03);
+  animation-fill-mode: both;
+}
+
+.rouletteListReverseSlide {
+  animation-name: reverseSlide;
+}
+
+.rouletteItem {
+  height: 100%;
+  width: 100%;
+  color: var(--white-transparent-color);
+}
+
+.rouletteItemName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(var(--big-font)*1.5);
+  width: 100%;
+  height: 100%;
+}
+
+.rouletteItem:last-child .rouletteItemName {
+  text-shadow: 0rem 0rem 1rem var(--yellow-color);
+}
+
+.rouletteBtn {
+  font-size: calc(var(--big-font)*1.2);
+  padding: 0.5rem;
+}
+
+/* CHICKIZ MODAL LEFT*/
+
+.chickizModalNameBox {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chickizModalOwnerLoading {
+  margin-left: 0.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.chickizModalOwnerBox {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  font-size: var(--medium-font);
+  color: var(--semi-dark-gray-color);
+}
+
+.chickizModalDetailWholeBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chickizModalOwnerName {
+  height: 100%;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* CHICKIZ MODAL RIGHT*/
+
+.chickizModalTabBox {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.01rem solid var(--gray-color);
+}
+
+.chickizModalEachTab {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gray-color);
+  font-size: var(--big-font);
+  cursor: pointer;
+}
+
+.chickizModalEachTab_selected {
+  border-bottom: 0.2rem solid black;
+  color: black;
+
+}
+
+.chickizModalEachTab_notSelected:hover {
+  color: var(--semi-dark-gray-color);
+  text-shadow: 0rem 0rem 0.2rem rgb(154, 154, 154, 0.4);
+}
+
+/* CHICKIZ MODAL MINING */
+
+.chickizModalMiningBox {
+  width: 100%;
+  height: 85%;
+  display: grid;
+  row-gap: 0.5rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.chickizModalMiningEachBox {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 0.5rem; */
+  border: 0.01rem solid var(--gray-color);
+  /* border: 0.01rem solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chickizModalMiningBox_title {
+  width: 35%;
+  height: 80%;
+  display: flex;
+  border-right: 0.01rem solid var(--gray-color);
+  align-items: center;
+  justify-content: center;
+}
+
+.chickizModalMiningBox_question {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.chickizModalMiningBox_info {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--medium-font);
+}
+
+.chickizModalMiningBox_remark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  font-size: var(--small-font);
+  color: var(--green-color);
+}
+
+.chickizModalMiningBox_oilBox {
+  width: 80%;
+  height: 1rem;
+  border: 0.01rem solid var(--gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--micro-font);
+}
+
+.chickizModalMiningBox_mentor {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 0.5rem;
+}
+
+/* CHICKIZ MODAL TRAIT */
+
+.chickizModalTraitBox {
+  width: 100%;
+  height: 85%;
+  display: grid;
+  row-gap: 0.5rem;
+  column-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.chickizModalTraitEachBox {
+  width: 100%;
+  padding-left: 0.5rem;
+  /* border-radius: 0.5rem; */
+  border: 0.01rem solid var(--gray-color);
+  /* border: 0.01rem solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chickizModalTraitEachBox_icon {
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+}
+
+.chickizModalTraitEachBox_trait {
+  width: 50%;
+  text-align: center;
+  white-space: pre-wrap;
+  font-size: var(--medium-font);
+}
+
+.chickizModalTraitEachBox_percentage {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--small-font);
+  color: white;
+}
+
+.percentage_common {
+  background-color: rgb(164, 210, 133);
+}
+
+.percentage_uncommon {
+  background-color: rgb(235, 198, 150);
+
+}
+
+.percentage_rare {
+  background-color: rgb(239, 147, 147);
+
+}
+
+.percentage_superrare {
+  background-color: rgb(186, 136, 231);
+
+}
+
+/* MENTOR */
+.mentor_cautionWhole{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mentor_cautionTitle{
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: calc(1.2*var(--big-font));
+}
+
+.mentor_caution{
+  width: 80%;
+  text-align: center;
+  color: var(--red-color);
+  font-size: var(--big-font);
+  white-space: pre-line;
+  line-height: calc(1.5*var(--big-font));
+}
+
+.mentor_cautionButton{
+  padding : 0rem 1rem;
+  height: 2rem; 
+  font-size: var(--big-font);
+}
+
+.mentor_equipHeader{
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: var(--big-font);
+}
+
+.mentor_equipHeaderFirst{
+  display: flex;
+  align-items: center;
+}
+
+.mentor_equipChickiz{
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+}
+
+.mentor_equipChickizName{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 2.5rem;
+  text-decoration: underline; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mentor_equipDesc{
+  display: flex;
+  align-items: center;
+}
+
+.mentor_equipButton{
+  width: 8rem;
+  height: 2rem; 
+  font-size: var(--big-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentor_equipGridBox{
+  width: 100%;
+  height: 75%;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+.mentor_equipGridBox::-webkit-scrollbar {
+  width: 0.15rem;
+  height: 0.15rem;
+  background: var(--dark-gray-color);
+}
+
+.mentor_equipGridBox::-webkit-scrollbar-thumb {
+  width: 0.15rem;
+  height: 0.15rem;
+  background: var(--gray-color);
+}
+
+.mentor_selected{
+  border: 0.2rem solid var(--red-color);
+}
+
+@keyframes slide {
+  0% {
+    margin-top: 0rem;
+  }
+
+  100% {
+    margin-top: -592.5rem;
+  }
+}
+
+@keyframes reverseSlide {
+  100% {
+    margin-top: 0rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .modal {
+    width: 90rem;
+    height: 120rem;
+    position: fixed;
+    margin: auto;
+  }
+
+  .QRmodal {
+    width: 90rem;
+    height: 120rem;
+    position: fixed;
+    margin: auto;
+  }
+
+  .modalCloseDiv {
+    padding: 0rem var(--medium-padding);
+    height: 8%;
+  }
+
+  .modalCloseBox {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    margin-top: 0.2rem;
+  }
+
+  .modalContent {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 7% 7%;
+  }
+
+  .modalContentTitle {
+    height: 5%;
+  }
+
+  /* SMALL */
+  .smallModal {
+    width: 90rem;
+    height: 60rem;
+  }
+
+  .smallModalCloseDiv {
+    width: 100%;
+    background-color: var(--yellow-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0rem calc(0.5 * var(--medium-padding));
+    height: 18%;
+  }
+
+  .smallModalCloseBox {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    margin-top: 0.2rem;
+  }
+
+  .smallModalContent {
+    width: 100%;
+    height: 100%;
+    padding: 7rem 6rem 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .smallModalContentTitle {
+    width: 90%;
+    height: 24rem;
+    color: black;
+    font-size: var(--big-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: pre-wrap;
+    line-height: calc(1.5*var(--big-font));
+  }
+
+  .smallModalJustAlertDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .smallModalConfirmAlertDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+  }
+
+  .smallModalButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 16rem;
+    height: 7rem;
+    cursor: pointer;
+  }
+
+  /* NOTIFICATION */
+
+  .notificationsTab {
+    width: 100%;
+  }
+
+  .notificationsTabEach_selected {
+    border-bottom: 0.6rem black solid;
+  }
+
+  .notificationAlarmOn {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 0.6rem;
+    top: 20%;
+    right: 10%;
+  }
+
+  .notificationHeaderLastCheck {
+    display: none;
+  }
+
+  .notificationsDiv {
+    width: 100%;
+    height: 85%;
+    padding: 2%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .notificationsDiv::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+    background: var(--gray-color);
+  }
+
+  .notificationsDiv::-webkit-scrollbar-thumb {
+    width: 1rem;
+    height: 1rem;
+    background: var(--dark-gray-color);
+  }
+
+  .notifications_guestBook,
+  .notifications_guestBook_blue,
+  .notifications_likeNeighbor,
+  .notifications_likeNeighbor_blue,
+  .notifications_announce,
+  .notifications_announce_blue {
+    position: relative;
+  }
+
+  .notifications_guestBook:last-child {
+    border-bottom: none;
+  }
+
+  .notifications_guestBook:hover,
+  .notifications_guestBook_blue:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .notification_repChickiz {
+    width: 12rem;
+  }
+
+  .notification_guestBookContent {
+    width: 78%;
+    height: 12rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .notification_guestBookMain {
+    width: 100%;
+    font-size: var(--medium-font);
+  }
+
+  .notification_guestBookText {
+    width: 100%;
+    font-size: 2rem;
+    color: var(--dark-gray-color);
+  }
+
+  .notificationsTime {
+    font-size: var(--micro-font);
+    color: var(--dark-gray-color);
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+
+
+  .notifications_likeNeighborContent {
+    width: 78%;
+    padding-top: 1.5rem;
+  }
+
+  .notifications_likeNeighborContent {
+    font-size: var(--medium-font);
+  }
+
+  .notifications_announce,
+  .notifications_announce_blue {
+    height: 12rem;
+    padding-top: 4rem;
+  }
+
+  .notifications_announceContent {
+    width: 100%;
+    font-size: var(--medium-font);
+  }
+
+
+  /* NFT */
+
+  .nftModalContent {
+    flex-direction: column;
+  }
+
+
+  .nftModalLeftBox {
+    width: 100%;
+    display: flex;
+    padding: 0 2%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nftModalRightBox {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nftModalImageBox {
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+  }
+
+  .nftModalNameBox {
+    width: 40rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nftModalName {
+    width: 100%;
+    font-size: var(--big-font);
+  }
+
+  .nftModalOpenseaButton {
+    flex-direction: column;
+    height: 50%;
+  }
+
+  .nftModalOpenseaISBox {
+    height: calc(1.5*var(--big-font));
+    width: 22rem;
+    border-radius: 3rem;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+
+  .nftModalOpenseaISBox_gray {
+    height: calc(1.5*var(--big-font));
+    width: 22rem;
+    border-radius: 3rem;
+    padding: 0rem 1rem 0rem 1rem;
+  }
+
+  .nftModalOpenseaIconBox {
+    margin-right: 1rem;
+  }
+
+  .nftModalOpenseaIconBox {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .nftModalOpenseaSpan {
+    color: black;
+    font-size: var(--medium-font);
+  }
+
+  /*
+.nftModalTraitBox {
+  width: 100%;
+  height: 15rem;
+  display: grid;
+  gap: calc(0.5 * var(--medium-padding));
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+*/
+
+  .nftModalTraitBox {
+    gap: calc(0.75 * var(--medium-padding));
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .nftModalGrid {
+    width: 100%;
+    height: 100%;
+    border: 0.05rem solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0rem;
+    justify-content: space-between;
+  }
+
+  .nftModalTraitType {
+    font-size: var(--small-font);
+    text-align: center;
+    color: var(--dark-gray-color);
+  }
+
+  .nftModalTraitValue {
+    font-size: var(--medium-font);
+    text-align: center;
+    color: black;
+  }
+
+  .nftModalDescriptionBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .nftModalSubtitle {
+    color: black;
+    font-size: var(--big-font);
+  }
+
+  .nftModalDesc {
+    font-size: var(--medium-font);
+    margin-top: var(--medium-padding);
+    color: black;
+  }
+
+  /* otherNFTModal */
+
+  .otherNFTModalETCWhole {
+    width: 40rem;
+    height: 30rem;
+    padding: 1rem 0rem;
+  }
+
+  .otherNFTModalProjectNameWhole {
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .otherNFTModalProjectNameWhole_transfer {
+    width: auto;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .otherNFTModalProjectNameWhole_transferResult {
+    width: auto;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .otherNFTModalProjectNameWhole_transferResult .otherNFTModalProjectName {
+    font-size: var(--small-font);
+  }
+
+  .otherNFTModalProjectNameWhole_transferResult .otherNFTModalProjectNameEach {
+    font-size: var(--medium-font);
+  }
+
+  .otherNFTModalProjectName {
+    font-size: var(--medium-font);
+    color: var(--dark-gray-color);
+  }
+
+  .otherNFTModalProjectNameEach {
+    font-size: var(--big-font);
+  }
+
+  .otherNFTModalLinkBox {
+    width: 100%;
+    height: 5rem;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .otherNFTModalLinkEach {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .otherNFTModalTraitBox_Whole {
+    width: 100%;
+    height: 100%;
+    padding: 0rem 2rem 0rem 1rem;
+    overflow-y: scroll;
+  }
+
+  .otherNFTModalTraitBox_Whole::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+    background: var(--gray-color);
+  }
+
+  .otherNFTModalTraitBox_Whole::-webkit-scrollbar-thumb {
+    width: 1rem;
+    height: 1rem;
+    background: var(--dark-gray-color);
+  }
+
+  .otherNFTModalTraitBox_Grid {
+    width: 100%;
+    display: grid;
+    gap: calc(0.75 * var(--medium-padding));
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .otherNFTModalGrid {
+    width: 100%;
+    height: 11rem;
+    border: 0.05rem solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    justify-content: space-between;
+  }
+
+  .otherNFTModalTraitType {
+    font-size: var(--small-font);
+    text-align: center;
+    color: var(--dark-gray-color);
+  }
+
+  .otherNFTModalTraitValue {
+    font-size: var(--medium-font);
+  }
+
+  .otherNFTModalNoTraitBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .otherNFTModalNoTrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* TRANSFER */
+
+  .transferDiv {
+    height: 92%;
+    padding: 4% 4%;
+    justify-content: space-around;
+  }
+
+  .transferInputBox {
+    flex-direction: column;
+    height: 85%;
+    margin-top: 0;
+  }
+
+  .transferLeftBox {
+    width: 90%;
+    height: 42%;
+  }
+
+  .otherNFTtransferLeftBox {
+    width: 90%;
+    height: 50%;
+  }
+
+  .AInputBox {
+    width: 100%;
+    height: 50%;
+  }
+
+  .otherNFTAInputBox {
+    width: 100%;
+    height: 50%;
+    margin-bottom: -8%;
+  }
+
+  .notice {
+    width: 90%;
+    height: 30%;
+  }
+
+  .noticeBox {
+    width: 100%;
+  }
+
+  .addressInputBox {
+    width: 90%;
+    height: 28%;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+  }
+
+  .addressInputDiv {
+    width: 90%;
+    height: 30%;
+    justify-content: space-between;
+  }
+
+  .transferImageBox {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .addressTitle {
+    font-size: var(--big-font);
+    margin-bottom: 1rem;
+  }
+
+  .transferNftName {
+    font-size: calc(var(--big-font)*1.2);
+  }
+
+  .addressInput {
+    background-color: transparent;
+    border: 0.4rem solid var(--dark-gray-color);
+    border-radius: 1rem;
+    color: black;
+    font-size: var(--medium-font);
+    width: 100%;
+    height: 7rem;
+    padding: 0rem 2rem;
+  }
+
+  .transferTitleBox {
+    height: 7%;
+  }
+
+  .transferBtnBox {
+    height: 7%;
+  }
+
+  .transferBtn {
+    width: 30%;
+  }
+
+  .transferLoadingBox {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .noticeSpan {
+    font-size: var(--small-font);
+  }
+
+  .noticeImgBox {
+    width: 2.5rem;
+    margin-right: 1rem;
+  }
+
+  .QAInputBox {
+    width: 100%;
+    height: 50%;
+  }
+
+  .quanInputBox {
+    width: 90%;
+    height: 28%;
+  }
+
+  .quanTitle {
+    font-size: var(--big-font);
+    margin-bottom: 1rem;
+  }
+
+  .quanSub {
+    font-size: 2.5rem;
+  }
+
+  /* TRANSFER RESULT */
+
+  .transferResult {
+    justify-content: space-around;
+    padding: 4% 4%;
+  }
+
+  .transferResultDiv {
+    justify-content: space-around;
+    height: 90%;
+  }
+
+  .transferResultBox {
+    justify-content: center;
+  }
+
+  .transfetResultCheckImgBox {
+    width: 5.5rem;
+    margin-right: 2rem;
+  }
+
+  .transferResultImgBox {
+    width: 40rem;
+    height: 40rem;
+    margin-bottom: 4rem;
+  }
+
+  .transfetResultNftNameSpan {
+    font-size: calc(var(--big-font)*1.2);
+  }
+
+  /* CHICKIBALL */
+  .chickiballHowToPlayTitle {
+    width: 100%;
+    height: 8%;
+  }
+
+  .chickiballExBox {
+    width: 90%;
+    height: 70%;
+  }
+
+  .chickiballExTitle {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+  }
+
+  .chickiballExSpan {
+    width: 90%;
+    font-size: var(--medium-font);
+  }
+
+  .chickiballExImage {
+    width: 49rem;
+    height: 9rem;
+    padding: 0.6rem;
+  }
+
+  .chickiballExImageTry {
+    width: 6.6rem;
+    height: 6.6rem;
+    font-size: 4.8rem;
+  }
+
+  .chickiballExImageResult1 {
+    width: 14rem;
+    font-size: 4.8rem;
+  }
+
+  .chickiballExImageResult2 {
+    width: 14rem;
+    font-size: 4.8rem;
+  }
+
+  .chickiballExImageResult3 {
+    width: 14rem;
+    font-size: 4.8rem;
+  }
+
+  .chickiballHowToPlayFooter {
+    width: 90%;
+    height: 8%;
+  }
+
+  .chickiballModalContentFooter {
+    line-height: 4rem;
+    font-size: var(--small-font);
+  }
+
+  .chickiballTd {
+    font-size: var(--small-font);
+  }
+
+  .chickiballHTRTitle {
+    font-size: calc(var(--big-font)*1.2);
+  }
+
+  .chickiballHTRDes {
+    line-height: 9rem;
+    margin: calc(var(--medium-padding)*4) 0 calc(var(--medium-padding)*4) 0;
+  }
+
+  .chickiballHTRFooter {
+    line-height: 6rem;
+  }
+
+  .chickiballHTRButton {
+    width: 60%;
+    margin-top: 4rem;
+    height: 6rem;
+    align-self: center;
+    font-size: 4rem;
+  }
+
+  /* farm */
+  .farmTable {
+    width: 80%;
+    height: 90%;
+  }
+
+  .farmTableTh {
+    font-size: var(--medium-font) !important;
+    height: 11% !important;
+  }
+
+  .farmTableTd,
+  .farmTableTd_rank {
+    font-size: var(--medium-font);
+  }
+
+  .farmTableTh:nth-child(1) {
+    width: 30%;
+  }
+
+  /* GUESTBOOK */
+
+  .guestBookButton {
+    padding: 1rem 2rem;
+    font-size: var(--big-font);
+  }
+
+  .guestBookInput {
+    border: 0.4rem solid var(--dark-gray-color);
+    border-radius: 1rem;
+    line-height: 5rem;
+  }
+
+  /* todayChicken */
+
+  .rouletteUlBox {
+    height: 70%;
+  }
+
+  .rouletteItemName {
+    font-size: calc(var(--big-font)*1.2);
+  }
+
+  .rouletteBtn {
+    padding: 2rem;
+  }
+
+  @keyframes slide {
+    0% {
+      margin-top: 0rem;
+    }
+
+    100% {
+      margin-top: -1651.4rem;
+    }
+  }
+
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(5rem);
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* CHICKIZ MODAL LEFT*/
+
+  .chickizModalNameBox {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .chickizModalOwnerLoading {
+    margin-left: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .chickizModalOwnerBox {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    font-size: var(--medium-font);
+    color: var(--semi-dark-gray-color);
+  }
+
+  .chickizModalDetailWholeBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .chickizModalOwnerName {
+    height: 100%;
+    margin-left: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  /* CHICKIZ MODAL RIGHT*/
+
+  .chickizModalTabBox {
+    border-bottom: 0.05rem solid var(--gray-color);
+  }
+
+
+  .chickizModalEachTab {
+    font-size: var(--medium-font);
+  }
+
+  .chickizModalEachTab_selected {
+    border-bottom: 0.5rem solid black;
+    color: black;
+  }
+
+  /* CHICKIZ MODAL MINING */
+
+  .chickizModalMiningBox {
+    width: 100%;
+    height: 85%;
+    display: grid;
+    row-gap: 1.2rem;
+    column-gap: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .chickizModalMiningEachBox {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 0.5rem; */
+    border: 0.05rem solid var(--gray-color);
+    /* border: 0.01rem solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--medium-font);
+  }
+
+  .chickizModalMiningBox_title {
+    width: 35%;
+    height: 80%;
+    display: flex;
+    border-right: 0.05rem solid var(--gray-color);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chickizModalMiningBox_question {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-left: 1.5rem;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .chickizModalMiningBox_info {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--medium-font);
+  }
+
+  .chickizModalMiningBox_remark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+    font-size: var(--small-font);
+    color: var(--green-color);
+  }
+
+  .chickizModalMiningBox_oilBox {
+    width: 80%;
+    height: 1rem;
+    border: 0.05rem solid var(--gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--micro-font);
+  }
+
+  .chickizModalMiningBox_mentor {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1.5rem;
+  }
+
+
+  /* CHICKIZ MODAL TRAIT */
+
+  .chickizModalTraitBox {
+    width: 100%;
+    height: 85%;
+    display: grid;
+    row-gap: 1.2rem;
+    column-gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .chickizModalTraitEachBox {
+    width: 100%;
+    height: 100%;
+    padding-left: 2rem;
+    /* border-radius: 0.5rem; */
+    border: 0.05rem solid var(--gray-color);
+    /* border: 0.01rem solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .chickizModalTraitEachBox_icon {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+  }
+
+  .chickizModalTraitEachBox_trait {
+    font-size: var(--small-font);
+  }
+
+  .chickizModalTraitEachBox_percentage {
+    width: 26%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--micro-font);
+    color: white;
+  }
+  
+/* MENTOR */
+.mentor_cautionTitle{
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: calc(1.2*var(--big-font));
+}
+
+.mentor_caution{
+  width: 100%;
+  text-align: center;
+  color: var(--red-color);
+  font-size: var(--medium-font);
+  white-space: pre-line;
+  line-height: calc(1.5*var(--big-font));
+}
+
+.mentor_cautionButton{
+  padding : 0rem 3rem;
+  height: 7rem; 
+  font-size: var(--big-font);
+}
+
+.mentor_equipHeader{
+  width: 100%;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-size: var(--medium-font);
+}
+
+.mentor_equipHeaderFirst{
+  font-size: var(--big-font);
+}
+
+.mentor_equipChickiz{
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+}
+
+.mentor_equipChickizName{
+  margin-left: 3rem;
+  margin-right: 0rem;
+  height: 2.5rem;
+  text-decoration: underline; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mentor_equipDesc{
+  display: flex;
+  align-items: center;
+}
+
+.mentor_equipButton{
+  width: 20rem;
+  height: 7rem; 
+  font-size: var(--big-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentor_equipGridBox{
+  width: 100%;
+  height: 70%;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+
+.mentor_equipGridBox::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+  background: var(--dark-gray-color);
+}
+
+.mentor_equipGridBox::-webkit-scrollbar-thumb {
+  width: 1rem;
+  height: 1rem;
+  background: var(--gray-color);
+}
+
+.mentor_selected{
+  border: 0.5rem solid var(--red-color);
+}
+
+
+  /* login */
+
+  .loginModalBtnBox {
+    width: 100%;
+    height: 50%;
+  }
+
+  .loginModalTitleBox {
+    height: 30%;
+  }
+
+  .loginModalTitle {
+    font-size: calc(var(--big-font)*1.5);
+  }
+
+  .loginModalBtn {
+    height: 25%;
+    margin-bottom: 3rem;
+  }
+
+  .loginBtnImage {
+    margin-right: 2rem !important;
+  }
+
+  .loginKaikasBtnDiv {
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loginKlipBtnDiv {
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .klipTitleDiv {
+    width: 7rem;
+  }
+
+  .klipTQBox {
+    padding: 10rem 0;
+  }
+
+  .klipQrBox {
+    width: 50rem;
+    height: 50rem;
+  }
+
+  .klipDesBox {
+    width: 80%;
+    height: 20%;
+  }
+
+  .klipDesIconBox {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .klipDesSpan {
+    font-size: var(--small-font);
+  }
+
+}

@@ -1,0 +1,889 @@
+/* Land */
+.landDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    height: 100%;
+}
+
+.landBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 80%;
+    padding: 2rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.landBox:nth-child(1) {
+    border: 0.2rem solid #ba2173;
+    background: linear-gradient(to bottom right, #f5bbdb, #c1337f);
+}
+
+.landBox:nth-child(2) {
+    border: 0.2rem solid #2f1b86;
+    background: linear-gradient(to bottom right, #A8C0FF, #433389);
+}
+
+.landBox:nth-child(3) {
+    border: 0.2rem solid #ca750d;
+    background: linear-gradient(to bottom right, #e6cc94, #de9619);
+}
+
+.landBox:nth-child(1):hover {
+    background: linear-gradient(to bottom right, #FBD3E9, #ba2173);
+}
+
+.landBox:nth-child(2):hover {
+    background: linear-gradient(to bottom right, #A8C0FF, #2f1b86);
+}
+
+.landBox:nth-child(3):hover {
+    background: linear-gradient(to bottom right, #e6cc94, #ca750d);
+}
+
+
+.landBox:hover .landImage {
+    width: 90%;
+    filter: drop-shadow(0rem 0rem 2rem var(--white-transparent-color));
+}
+
+.landDetail {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.landImage {
+    width: 85%;
+    transition: width 0.25s ease-in-out;
+    display: flex;
+}
+
+.landName_pink {
+    font-size: calc(var(--big-font)*1.8);
+    text-shadow: 0.15rem 0 #BB377D, 0 0.15rem #BB377D, 0.15rem 0 #BB377D, 0 -0.15rem #BB377D;
+}
+
+.landName_indigo {
+    font-size: calc(var(--big-font)*1.8);
+    text-shadow: 0.15rem 0 #2f1b86, 0 0.15rem #2f1b86, 0.15rem 0 #2f1b86, 0 -0.15rem #2f1b86;
+}
+
+.landName_yellow {
+    font-size: calc(var(--big-font)*1.8);
+    text-shadow: 0.15rem 0 #ca750d, 0 0.15rem #ca750d, 0.15rem 0 #ca750d, 0 -0.15rem #ca750d;
+}
+
+.landButton {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: calc(var(--big-font)*1.5);
+    border-radius: 0.3rem;
+}
+
+.landDesc {
+    font-size: calc(1.1*var(--big-font));
+    line-height: 2rem;
+    text-align: center;
+}
+
+/* BASEBALL CHICKIBALL */
+
+.eachFarmFarmerSubTab {
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.01rem rgba(255, 255, 255, 0.15) solid;
+}
+
+.eachFarmFarmerSubTitle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--big-font);
+    color: white;
+    cursor: pointer;
+}
+
+.eachFarmFarmerSubTitle:hover {
+    text-shadow: 0rem 0rem 0.2rem var(--white-transparent-color);
+}
+
+.eachFarmFarmerSubTitleSelected {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.2rem solid var(--yellow-color);
+    font-size: var(--big-font);
+    color: var(--yellow-color);
+}
+
+.nbMobileHeader {
+    display: none;
+}
+
+.nbTitle {
+    width: 100%;
+    font-size: var(--big-font);
+    text-align: center;
+    color: var(--yellow-color);
+}
+
+.nbRankingTitle {
+    width: 100%;
+    margin-top: 1rem;
+    height: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nbRankingTitle_each {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--yellow-color);
+}
+
+.nbRankingTitle_hallOfFame1 {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--yellow-color);
+}
+
+.nbRankingTitle_hallOfFame2 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--yellow-color);
+}
+
+.nbRankingTitle_hallOfFameImage {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.nbRankingTitle_each:nth-child(1) {
+    width: 10%;
+}
+
+.nbRankingTitle_each:nth-child(2) {
+    width: 50%;
+}
+
+.nbRankingTitle_each:nth-child(3) {
+    width: 30%;
+}
+
+.nbRankingBox {
+    width: 100%;
+    height: 70%;
+    padding: 0% 2% 0% 0%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nbRankingBox_hallOfFame {
+    width: 100%;
+    height: 82%;
+    padding: 0% 2% 0% 0%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nbRankingBox::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.nbRankingBox::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.nbRankingBox_hallOfFame::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.nbRankingBox_hallOfFame::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.nbRankingMyBox {
+    width: 100%;
+    padding: 2% 6% 2% 4%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.01rem var(--purple-color) solid;
+    background-color: rgba(105, 44, 185, 0.4);
+    position: sticky;
+}
+
+.nbRankingNoLoginBox {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nbRankingEachBox {
+    width: 96%;
+    padding: 2%;
+    border-bottom: 0.01rem white solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.nbRankingEachBox:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nbRankingEachBox:last-child {
+    border-bottom: none;
+}
+
+.nbRankingEachRep {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.nbRankingRank {
+    width: 10%;
+}
+
+.nbRankingWeek {
+    width: 20%;
+}
+
+.nbRankingEachName {
+    width: 40%;
+}
+
+.nbRankingEachScore {
+    width: 20%;
+    text-align: center;
+}
+
+.nbRankingIconBox {
+    width: 0.8rem;
+    height: 0.8rem;
+    cursor: pointer;
+    margin-left: 0.3rem;
+}
+
+.nbBody {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nbNum {
+    width: 70%;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 0.6rem;
+}
+
+.nbRow {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+}
+
+.nbEach {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.nbEach_written {
+    width: 100%;
+    background-color: white;
+    width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.25s ease-in-out;
+
+    animation-name: PopIn;
+    animation-duration: 300ms;
+}
+
+.nbResult {
+    width: 25%;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 0.6rem;
+}
+
+.nbResultEach {
+    width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nbResultIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.nbGreen {
+    color: rgb(58, 214, 58);
+}
+
+.nbYellow {
+    color: rgb(242, 242, 30);
+}
+
+.nbRed {
+    color: rgb(238, 29, 29);
+}
+
+.nbKeyBoard {
+    width: 100%;
+    height: 17%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.4rem;
+}
+
+.nbKeyBoardEach {
+    width: 100%;
+    background-color: #dae1e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.nbKeyBoardIcon {
+    width: 50%;
+    display: flex;
+}
+
+.nbNo {
+    width: 0rem;
+    height: 0rem;
+    bottom: 0;
+    right: 0;
+    z-index: -1000;
+    font-size: 0rem;
+    position: absolute;
+}
+
+.nbWorngModal {
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    z-Index: 1000;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation-name: FadeOut;
+    animation-duration: 1000ms;
+}
+
+.nbEndModal {
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    z-Index: 1000;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation-name: FadeOut;
+    animation-duration: 3000ms;
+}
+
+.nbCongratModal {
+    width: 23rem;
+    height: 23rem;
+    display: flex;
+    z-Index: 1000;
+    position: absolute;
+    animation-name: FadeOut;
+    animation-duration: 1000ms;
+}
+
+.nbWrongImage {
+    width: 100%;
+}
+
+.nbWrongWord {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
+
+.nbModalCloseDiv {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0rem calc(0.5 * var(--medium-padding));
+    height: 10%;
+}
+
+.nbRecordMain {
+    width: 100%;
+    height: 13%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4%
+}
+
+.nbRecordMainEach {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nbReocordMainEach_big {
+    color: white;
+    font-size: 2rem;
+}
+
+
+.nbReocordMainEach_small {
+    display: flex;
+    align-items: center;
+}
+
+.nbRecordGraph {
+    width: 96%;
+    height: 36%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nbRecordGraphEachBox {
+    width: 12%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nbRecordGraphBarBox {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nbRecordGraphBar {
+    width: 100%;
+    display: flex;
+    padding-top: 0.2rem;
+    min-height: 10%;
+    justify-content: center;
+    background-color: rgb(171, 171, 171);
+}
+
+.nbRecordGraphBar_selected {
+    width: 100%;
+    display: flex;
+    padding-top: 0.2rem;
+    min-height: 10%;
+    justify-content: center;
+    background-color: var(--purple-color);
+}
+
+.nbRecordGraphIndex {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.nbShareBox {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.nbShareBox_dead {
+    width: 100%;
+    height: 6%;
+    background-color: var(--dark-gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.nbFAQBox {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nbFAQEach:first-child {
+    border-top: 0.01rem solid white;
+}
+
+.nbFAQEach {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0rem 3%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.01rem solid white;
+    cursor: pointer;
+}
+
+.nbFAQEach:hover .nbFAQEachWord {
+    text-shadow: 0rem 0rem 0.2rem var(--white-transparent-color);
+}
+
+.nbFAQEach:hover .nbFAQIconBox .image100 {
+    filter: drop-shadow(0rem 0rem 0.2rem var(--white-transparent-color));
+}
+
+.nbFAQIconBox {
+    width: 5%;
+    display: flex;
+}
+
+.nbFooter {
+    width: 100%;
+    height: 4%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: var(--meidum-font);
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .landDiv {
+        flex-direction: column;
+        width: 100%;
+        height: 92%;
+    }
+
+    .landBox {
+        width: 95%;
+        height: 31%;
+        flex-direction: row;
+        padding: 0rem 4rem;
+        border-radius: 4rem;
+    }
+
+    .landImage {
+        width: 40%;
+    }
+
+    .landBox:hover .landImage {
+        width: 40%;
+        filter: drop-shadow(0rem 0rem 2rem var(--white-transparent-color));
+    }
+
+    .landDetail {
+        width: 55%;
+        height: 60%;
+    }
+
+    .landName_pink {
+        font-size: calc(1.5*var(--big-font));
+    }
+
+    .landName_indigo {
+        font-size: calc(1.5*var(--big-font));
+    }
+
+    .landName_yellow {
+        font-size: calc(1.5*var(--big-font));
+    }
+
+    .landDesc {
+        font-size: var(--medium-font);
+        line-height: 6rem;
+        text-align: center;
+    }
+
+    /* BASEBALL CHICKIBALL */
+
+    .mobileChickiballRank {
+        height: 100%;
+    }
+
+    .nbMobileHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--black-transparent-color);
+        width: 100%;
+        height: 16rem;
+        margin-top: var(--column-padding);
+        border-bottom: 0.01rem rgba(255, 255, 255, 0.2) solid;
+    }
+
+    .nbMobileTitle {
+        width: 60%;
+        text-align: center;
+        font-size: 8rem;
+    }
+
+    .nbMobileTitle_selected {
+        width: 60%;
+        text-align: center;
+        font-size: 8rem;
+        color: var(--yellow-color);
+    }
+
+    .nbMobileIconBox {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .nbRankingIconBox {
+        width: 3.2rem;
+        height: 3.2rem;
+        margin-left: 1rem;
+    }
+
+    .nbMobileIcon {
+        width: 30%;
+        display: flex;
+    }
+
+    .nbRankingTitle {
+        width: 100%;
+        height: 6%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nbRankingTitle_hallOfFame1 {
+        font-size: var(--big-font);
+    }
+
+    .nbRankingTitle_hallOfFame2 {
+        font-size: var(--big-font);
+    }
+
+    .nbRankingTitle_hallOfFameImage {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2rem;
+    }
+
+    .nbRankingTitle_each {
+        font-size: var(--big-font);
+    }
+
+    .nbRankingNoLoginBox {
+        height: 10rem;
+        font-size: var(--big-font);
+    }
+
+    .nbRankingBox::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+        background: var(--dark-gray-color);
+    }
+
+    .nbRankingBox::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+        background: var(--gray-color);
+    }
+
+    .nbRankingBox_hallOfFame::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+        background: var(--dark-gray-color);
+    }
+
+    .nbRankingBox_hallOfFame::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+        background: var(--gray-color);
+    }
+
+    .nbRankingRank {
+        font-size: var(--big-font);
+    }
+
+    .nbRankingWeek {
+        font-size: var(--big-font);
+    }
+
+    .nbRankingEachRep {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .nbRankingEachName,
+    .nbRankingEachScore {
+        font-size: var(--big-font);
+    }
+
+
+    .nbNum,
+    .nbRow,
+    .nbResult {
+        gap: calc(0.6*var(--medium-padding));
+    }
+
+    .nbKeyBoard {
+        gap: calc(0.6*var(--medium-padding));
+    }
+
+    .nbEach {
+        font-size: 7rem;
+    }
+
+    .nbEach_written {
+        font-size: 7rem;
+    }
+
+    .nbResultEach {
+        font-size: 6rem;
+    }
+
+    .nbResultIcon {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .nbKeyBoardEach {
+        font-size: 4rem;
+        cursor: default;
+    }
+
+    .nbNo {
+        display: none;
+    }
+
+    .nbWhite {
+        font-size: 4rem;
+    }
+
+    .nbWorngModal {
+        width: 60rem;
+        height: 60rem;
+    }
+
+    .nbEndModal {
+        width: 60rem;
+        height: 60rem;
+    }
+
+    .nbReocordMainEach_big {
+        font-size: 7rem;
+    }
+
+    .nbReocordMainEach_small {
+        font-size: var(--big-font);
+    }
+
+    .nbRecordGraphBar,
+    .nbRecordGraphBar_selected {
+        padding-top: 1rem;
+        font-size: var(--medium-font);
+    }
+
+    .nbRecordGraphIndex {
+        font-size: 4rem;
+    }
+
+    .nbShareBox {
+        font-size: 5rem;
+    }
+
+    .nbShareBox_dead {
+        font-size: 5rem;
+    }
+
+    .nbFAQEach {
+        border-bottom: 0.01rem solid white;
+    }
+
+
+    .nbFAQEachWord {
+        font-size: var(--big-font);
+    }
+
+    .nbFooter {
+        font-size: var(--small-font);
+    }
+}

@@ -1,0 +1,503 @@
+.bank_whole{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bank_swap_whole{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+}
+
+.bank_swap_left{
+    width: 30rem;
+    height: 100%;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem 0rem 1rem;
+    border-radius: 1rem;
+}
+
+.bank_swap_right{
+    width: 20rem;
+    height: 100%;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem 0rem 2rem;
+    border-left: 0.01rem solid var(--gray-color);
+}
+
+.bank_swap_setting{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} 
+
+.bank_swap_slippage{
+    width: 3rem;
+    height: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.8rem;
+    color: black;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+    border:0.01rem solid black;
+    cursor:pointer;
+}
+
+.bank_swap_slippage_selected{
+    width: 3rem;
+    height: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange-color);
+    margin-left: 0.8rem;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+    border:0.01rem solid var(--orange-color);
+    cursor:pointer;
+}
+
+.bank_swap_asset{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    background-color: #e9ebed;
+} 
+
+.bank_swap_asset_header{
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.bank_swap_predict{
+    width: 5rem;
+    height: 1.4rem;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0.2rem;
+    background-color: rgb(219, 80, 80);
+}
+
+.bank_swap_asset_content{
+    width: 100%;
+    padding: 0 1rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bank_swap_input{
+    width: 15rem;
+    height: 100%;
+    background-color: #e9ebed;
+    border:none;
+    font-size: 1.6rem;
+}
+
+.bank_swapLoading{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 4rem;
+}
+
+.bank_swap_input::-webkit-outer-spin-button,
+.bank_swap_input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+}
+
+.bank_swap_asset_each{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.bank_swap_asset_image{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.bank_swap_asset_footer{
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--dark-gray-color);
+}
+
+.bank_swap_change{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.bank_swap_button{
+    width: 100%;
+    height: 2.2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bank_swap_poolBox{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e9ebed;
+    padding: 1rem;
+}
+
+.bank_swap_poolDiagram{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bank_swap_poolDiagramEach{
+    width: 46%;
+    height: 6rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.bank_swap_poolDiagramHeader{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--medium-font);
+    margin-bottom: 0.5rem;
+}
+
+.bank_swap_poolDiagramToken{
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    margin-right: 0.5rem;
+}
+
+.bank_swap_poolDiagramStat{
+    color: var(--dark-gray-color)
+}
+
+.bank_swap_predictBox{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e9ebed;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.bank_swap_predictTitle{
+    margin-bottom: 2rem;
+}
+
+.bank_swap_predictValue{
+    align-self: flex-end;
+    color: var(--dark-gray-color);
+}
+
+.bank_swap_predictCaution{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 1.5rem;
+    color: var(--red-color);
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+
+.bank_swap_whole{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+}
+
+.bank_swap_left{
+    width: 100%;
+    height: 105rem;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--medium-padding);
+    padding-bottom: calc(2*var(--medium-padding));
+    border-radius: var(--medium-padding);
+    margin-bottom: 0rem;
+}
+
+.bank_swap_right{
+    width: 100%;
+    height: 65rem;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--medium-padding);
+    padding-top: calc(1.5*var(--medium-padding));
+    border-left: none;
+    border-top: 0.01rem solid var(--gray-color);
+}
+
+.bank_swap_setting{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3rem;
+} 
+
+.bank_swap_slippage{
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    color: black;
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    border:0.01rem solid black;
+    cursor:pointer;
+}
+
+.bank_swap_slippage_selected{
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange-color);
+    margin-left: 3rem;
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    border:0.01rem solid var(--orange-color);
+    cursor:pointer;
+}
+
+.bank_swap_asset{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    justify-content: space-between;
+    background-color: #e9ebed;
+} 
+
+.bank_swap_asset_header{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    font-size: var(--medium-font);
+}
+
+.bank_swap_predict{
+    width: 15rem;
+    height: 4rem;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 0.4rem;
+    background-color: rgb(219, 80, 80);
+}
+
+.bank_swap_asset_content{
+    width: 100%;
+    padding: 0 2rem;
+    height: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bank_swap_input{
+    width: 15rem;
+    height: 100%;
+    background-color: #e9ebed;
+    border:none;
+    font-size: calc(1.2*var(--big-font));
+}
+
+.bank_swap_input::placeholder {
+    color: var(--dark-gray-color);
+}
+
+.bank_swap_asset_each{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: var(--big-font);
+}
+
+.bank_swap_asset_image{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    margin-right: 2rem;
+}
+
+.bank_swap_asset_footer{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    color: var(--dark-gray-color);
+    font-size: var(--medium-font);
+}
+
+.bank_swap_change{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.bank_swap_button{
+    width: 100%;
+    height: 8rem;
+    margin-top: 3rem;
+    font-size: calc(1.1*var(--big-font));
+} 
+
+.bank_swap_poolBox{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e9ebed;
+    padding: 1rem;
+}
+
+.bank_swap_poolDiagram{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bank_swap_poolDiagramEach{
+    width: 46%;
+    height: 6rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.bank_swap_poolDiagramHeader{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--medium-font);
+    margin-bottom: 0.5rem;
+}
+
+.bank_swap_poolDiagramToken{
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    margin-right: 0.5rem;
+}
+
+.bank_swap_poolDiagramStat{
+    color: var(--dark-gray-color)
+}
+
+.bank_swap_predictBox{
+    width: 100%;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e9ebed;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bank_swap_predictTitle{
+    margin-bottom: 2rem;
+    font-size: var(--medium-font);
+}
+
+.bank_swap_predictValue{
+    align-self: flex-end;
+    color: var(--dark-gray-color);
+    font-size: var(--medium-font);
+}
+
+.bank_swap_predictCaution{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 1.5rem;
+    color: var(--red-color);
+    font-size: var(--medium-font);
+}
+}

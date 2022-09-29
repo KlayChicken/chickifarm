@@ -1,0 +1,326 @@
+/* SIGN UP */
+
+.signUpPageWhole {
+    margin-bottom: 1rem;
+    width: 66%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.signUpPageSmallBoxTransparent {
+    width: 40%;
+    height: 80%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUpWelcomeBox {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.signUpPageWelcome {
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 0.6rem;
+    font-size: 1.3rem;
+}
+
+.signUpPageSmallBox {
+    width: 45%;
+    height: 90%;
+    background: linear-gradient(to bottom right,
+            rgb(255, 248, 237),
+            rgb(192, 184, 171));
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%;
+    color: black;
+}
+
+.signUpHeader {
+    font-size: 2.5rem;
+}
+
+.signUpCheckChickenLover {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUpQuestion {
+    font-size: 1.5rem;
+}
+
+.signUpCheckWholeBox {
+    width: 60%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.signUpTag {
+    font-size: 1.25rem;
+}
+
+.signUpCheck {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.signUpInputBox {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signUpInput {
+    width: 90%;
+    padding: 0.2rem;
+    font-size: 2rem;
+    text-align: center;
+    border: none;
+    color: var(--deep-dark-gray-color);
+}
+
+.signUpInput:focus {
+    outline: none;
+}
+
+.signUpInput::placeholder {
+    color: var(--dark-gray-color);
+}
+
+.signUpInput:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.signUpCaution {
+    font-size: var(--medium-font);
+    color: var(--red-color);
+    line-height: 1.5rem;
+}
+
+.signUpSubmit {
+    padding: 0.4rem 0.8rem;
+    font-size: 1.5rem;
+}
+
+.signUpImage {
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+}
+
+/* ERROR */
+
+.errorPageWhole {
+    margin-top: 3rem;
+    width: 55%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom right,
+            rgb(255, 248, 237),
+            rgb(170, 162, 149));
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+}
+
+.errorImageBox {
+    width: 40%;
+}
+
+.errorPageDescBox {
+    width: 60%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.errorPageDesc {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.errorPageDesc2 {
+    color: black;
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.errorGoHome {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    /* SIGNIN */
+    .signUpPageWhole {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .signUpPageSmallBoxTransparent {
+        width: 80%;
+        height: 35%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signUpWelcomeBox {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .signUpPageWelcome {
+        width: 100%;
+        color: white;
+        background-color: black;
+        padding: 2rem;
+        font-size: var(--big-font);
+    }
+
+    .signUpPageSmallBox {
+        width: 80%;
+        height: 60%;
+        margin-bottom: 4rem;
+    }
+
+    .signUpHeader {
+        font-size: 5rem;
+    }
+
+    .signUpCheckChickenLover {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signUpQuestion {
+        font-size: var(--big-font);
+    }
+
+    .signUpCheckWholeBox {
+        width: 60%;
+        display: flex;
+        margin-top: 2rem;
+        justify-content: space-between;
+    }
+
+    .signUpTag {
+        font-size: var(--medium-font);
+    }
+
+    .signUpCheck {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .signUpInputBox {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .signUpInput {
+        width: 90%;
+        padding: 2rem;
+        font-size: var(--big-font);
+        text-align: center;
+        border: none;
+        color: var(--deep-dark-gray-color);
+    }
+
+    .signUpCaution {
+        font-size: var(--medium-font);
+        color: var(--red-color);
+        line-height: 3rem;
+    }
+
+    .signUpSubmit {
+        padding: 1rem 2rem;
+        font-size: var(--big-font);
+    }
+
+    .signUpImage {
+        width: 200%;
+        height: 100%;
+        background-size: cover;
+        position: absolute;
+        top: 0rem;
+    }
+
+    /* ERROR */
+
+    .errorPageWhole {
+        height: 50%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .errorImageBox {
+        width: 35%;
+    }
+
+    .errorPageDescBox {
+        width: 65%;
+    }
+
+    .errorPageDesc {
+        font-size: var(--big-font);
+    }
+
+    .errorPageDesc2 {
+        width: 100%;
+        font-size: var(--small-font);
+        line-height: 3rem;
+    }
+
+    .errorGoHome {
+        padding: 1rem 2rem;
+        font-size: var(--medium-font);
+    }
+}

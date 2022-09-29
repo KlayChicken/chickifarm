@@ -1,0 +1,1482 @@
+/* Farm */
+
+.farmFindHeader {
+    width: 95%;
+    height: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.farmFindTotalSelectBox {
+    width: 100%;
+    height: 35%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.farmFindInputBoxWhole {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.farmFindInputBox {
+    width: 70%;
+    height: 100%;
+    border-radius: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0.4rem;
+    background-color: white;
+}
+
+.farmFindIcon {
+    width: var(--medium-padding);
+    height: var(--medium-padding);
+    cursor: pointer;
+}
+
+.farmFindInput {
+    margin-left: var(--medium-font);
+    width: 100%;
+    height: var(--medium-padding);
+    font-size: var(--big-font);
+    border: 0;
+}
+
+.farmFindInput:focus {
+    outline: none;
+}
+
+.farmFindInput:focus {
+    outline: none;
+}
+
+.farmFindInput::placeholder {
+    color: var(--dark-gray-color);
+}
+
+.farmFindInput:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.farmFindTotal {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: var(--big-font);
+}
+
+.farmFindSelect {
+    width: 60%;
+    height: 100%;
+    font-size: var(--big-font);
+    text-align: center;
+}
+
+.farmFindSelect:focus {
+    outline: none;
+}
+
+.farmFindOption {
+    font-size: 1rem;
+}
+
+.farmFindListBox {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.farmFindListGrid {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: var(--medium-padding);
+}
+
+.farmFindEachBox {
+    height: 100%;
+}
+
+.farmerListBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    padding: calc(0.5 * var(--medium-padding)) var(--medium-padding);
+    border-radius: calc(0.5 * var(--medium-padding));
+    background: linear-gradient(to bottom right,
+            rgb(255, 248, 237),
+            rgb(170, 162, 149));
+    transition: all 0.25s ease-in-out;
+}
+
+.farmerListBox:hover {
+    background: linear-gradient(to bottom right,
+            rgb(255, 248, 237),
+            rgb(158, 143, 120));
+}
+
+.farmerListBox:hover .farmerInfoName,
+.farmerListBox:hover .farmerInfoAddress {
+    color: white;
+    text-shadow: 0rem 0rem 0.2rem var(--white-transparent-color);
+}
+
+.farmerListBox:hover .image100 {
+    box-shadow: 0rem 0rem 1rem white;
+}
+
+.farmerImage {
+    width: 25%;
+}
+
+.farmerInfoSignImage {
+    width: 30%;
+    position: absolute;
+    top: calc(0.25 * var(--medium-padding));
+    right: 0%;
+    z-index: 100;
+}
+
+.farmerInfoBox {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.farmerInfoTopBox {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.farmerInfoBottomBox {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.farmerInfoName {
+    color: black;
+    font-size: var(--big-font);
+    transition: color 0.25s ease-in-out;
+}
+
+.farmerInfoAddress {
+    color: black;
+    font-size: var(--small-font);
+    transition: color 0.25s ease-in-out;
+}
+
+.farmerInfoRank {
+    padding: 0.2rem 0.6rem;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.farmerInfoChickizQuan {
+    margin-left: calc(0.5 * var(--medium-padding));
+    padding: 0.2rem 0.6rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--orange-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.farmerInfoLoveQuan {
+    margin-left: calc(0.5 * var(--medium-padding));
+    padding: 0.2rem 0.6rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--pink-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.farmerInfoLoveImg {
+    margin-right: calc(0.2 * var(--medium-padding));
+    display: flex;
+    width: 0.8rem;
+}
+
+.paginationFooter {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginationNumber {
+    margin: 0rem var(--medium-padding);
+    width: var(--big-font);
+    font-size: var(--big-font);
+    text-align: center;
+}
+
+.paginationArrowBox {
+    width: var(--big-font);
+    height: var(--big-font);
+    cursor: pointer;
+}
+
+.paginationLeftArrowBox {
+    width: 0rem;
+    height: 0rem;
+    border-right: var(--big-font) solid var(--green-color);
+    border-top: calc(0.5 * var(--big-font)) solid transparent;
+    border-bottom: calc(0.5 * var(--big-font)) solid transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+.paginationRightArrowBox {
+    width: 0rem;
+    height: 0rem;
+    border-left: var(--big-font) solid var(--green-color);
+    border-top: calc(0.5 * var(--big-font)) solid transparent;
+    border-bottom: calc(0.5 * var(--big-font)) solid transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+.paginationLeftArrowBox:hover {
+    border-right: var(--big-font) solid var(--green-hover-color);
+}
+
+.paginationRightArrowBox:hover {
+    border-left: var(--big-font) solid var(--green-hover-color);
+}
+
+.farmFindBody {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.farmFindFilterBox {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.farmFindFilterRangeBox {
+    height: 80%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.farmFindFilterSelect2 {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    font-size: var(--medium-font);
+}
+
+.farmFindFilterRange {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    align-items: center;
+}
+
+.farmFindFilterCheckWhole {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 18%;
+    align-items: center;
+}
+
+.farmFindFilterCheckBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: var(--medium-padding);
+}
+
+.farmFindFilterCheckTitle {
+    font-size: var(--medium-font);
+}
+
+.farmFindFilterReset {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.farmFindFilterCheck {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.farmFindFilterRangeTitle {
+    width: 20%;
+    font-size: var(--big-font);
+}
+
+.farmFindFilterRangeValueBox {
+    width: 75%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.farmFindFilterRangeValueInput {
+    width: 45%;
+    height: 100%;
+    font-size: var(--medium-font);
+    text-align: center;
+}
+
+.farmFindFilterSelect {
+    width: 75%;
+    height: 80%;
+    text-align: center;
+    font-size: var(--medium-font);
+}
+
+.farmFindCenterLine {
+    width: 100%;
+    border: dashed 0.01rem white;
+}
+
+.farmFindPreviewBox {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.farmFindPreviewHeader {
+    width: 100%;
+    height: 20%;
+    font-size: var(--big-font);
+    display: flex;
+    align-items: center;
+}
+
+.farmFindPreviewImageBox {
+    width: 100%;
+    height: 85%;
+    display: grid;
+    grid-gap: calc(0.75 * var(--medium-padding));
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* MY FARM */
+
+.forDrag {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.myFarmNFTBox1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myFarmNFTBox2 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myFarmNFTTitle {
+    width: 100%;
+    font-size: var(--big-font);
+    margin-bottom: calc(0.5 * var(--medium-padding));
+    color: var(--yellow-color);
+}
+
+.myFarmSkinTitleBox {
+    width: 100%;
+    margin-bottom: calc(0.5 * var(--medium-padding));
+    display: flex;
+    justify-content: space-between;
+}
+
+.myFarmSkinTitle {
+    font-size: var(--big-font);
+    color: var(--yellow-color);
+}
+
+.myFarmSkinCheckBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myFarmSkinCheckTag {
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.myFarmSkinCheckInput {
+    margin: 0rem 0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    cursor: pointer;
+}
+
+.myFarmSkinIconBox {
+    width: 0.8rem;
+    height: 0.8rem;
+    cursor: pointer;
+}
+
+.myFarmSkinIconBox:hover .image100 {
+    filter: drop-shadow(0rem 0rem 0.2rem var(--white-transparent-color));
+}
+
+.myFarmNFTGridBox {
+    width: 96%;
+    height: 100%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.myFarmNFTGridBox::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.myFarmNFTGridBox::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.myFarmNFTGrid {
+    width: 100%;
+    padding: 1%;
+    height: auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.myFarmNFT {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+}
+
+.myFarmNFTImageBox {
+    width: 100%;
+    display: flex;
+}
+
+.neonShineBoxTemp:hover {
+    box-shadow: 0rem 0rem 0.4rem var(--white-transparent-color);
+}
+
+.myFarmNFTName {
+    width: 100%;
+    margin-top: calc(var(--medium-padding) / 3);
+    font-size: var(--micro-font);
+    text-align: center;
+}
+
+.myFarmNFTQuanAdjustBox {
+    width: 90%;
+    margin-top: calc(var(--medium-padding) / 3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myFarmNFTQuanAdjustIconBox {
+    width: 0.8rem;
+    height: 0.8rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.myFarmNFTQuanAdjustSpan {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.myFarmNFTQuan {
+    width: 32%;
+    height: 16%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: var(--small-font);
+    background: linear-gradient(to bottom right,
+            rgb(255, 248, 237),
+            rgb(192, 184, 171));
+    color: var(--red-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myFarm_mobileWarning, .tabletPortraitWarning {
+    display: none;
+}
+
+/* EACH FARM */
+
+.farmImageBoxEach {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.farmImageBox {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.farmImage {
+    width: 100%;
+}
+
+.farmSignImage {
+    width: 20%;
+    z-index: 1000;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.farmSignImage:hover {
+    filter: drop-shadow(0rem 0rem 0.3rem white);
+}
+
+.farmChickizImageBox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.farmOrnamentImageBox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.farmChickizImage {
+    width: 100%;
+    position: relative;
+}
+
+.farmChickizImage:hover {
+    filter: drop-shadow(0rem 0rem 0.3rem white);
+}
+
+.farmChickizShadow {
+    align-self: center;
+    position: absolute;
+    bottom: -2%;
+    width: 60%;
+    height: 15%;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.eachFarmWholeBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eachFarmFarmerBox {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eachFarmFarmerImage {
+    width: 9.5rem;
+    height: 9.5rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.eachFarmFarmerInfoBox {
+    width: 57%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.eachFarmFarmerBasicBox {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.eachFarmFarmerNameBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.eachFarmFarmerName {
+    font-size: var(--big-font);
+}
+
+.eachFarmIcon {
+    width: var(--big-font);
+    height: var(--big-font);
+    margin-left: var(--micro-font);
+    cursor: pointer;
+}
+
+.eachFarmFarmerAddress {
+    margin-top: calc(0.7 * var(--medium-padding));
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: var(--medium-font);
+    overflow-x: hidden;
+    white-space: break-spaces;
+    word-break: break-all;
+}
+
+.eachFarmFarmerKNS{
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: 0.2rem;
+}
+
+.eachFarmFarmerKNSBox{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.eachFarmFarmerAddressCopy{
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.eachFarmFarmerDetails {
+    width: 100%;
+    display: flex;
+    height: 30%;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.eachFarmFarmerDetail {
+    padding: 0.2rem 0.6rem;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: calc(0.5 * var(--medium-padding));
+    background-color: var(--orange-color);
+}
+
+.bronzeBox {
+    background-color: var(--bronze-color);
+}
+
+.greenBox {
+    background-color: var(--green-color);
+}
+
+.orangeBox {
+    background-color: var(--orange-color);
+}
+
+.eachFarmFarmerSubBox {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eachFarmFarmerSubTab {
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.01rem rgba(255, 255, 255, 0.15) solid;
+}
+
+.eachFarmFarmerSubTitle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--big-font);
+    color: white;
+    cursor: pointer;
+}
+
+.eachFarmFarmerSubTitle:hover {
+    text-shadow: 0rem 0rem 0.2rem var(--white-transparent-color);
+}
+
+.eachFarmFarmerSubTitleSelected {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.2rem solid var(--yellow-color);
+    font-size: var(--big-font);
+    color: var(--yellow-color);
+}
+
+.eachFarmFarmerDetailBox {
+    width: 100%;
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eachFarmFarmerDetailTitle {
+    width: 100%;
+    height: 8%;
+    font-size: var(--big-font);
+}
+
+.eachFarmFarmerIntroBox {
+    width: 96%;
+    height: 26%;
+    padding-right: 4%;
+    overflow-y: scroll;
+    font-size: var(--medium-font);
+    line-height: 1.5rem;
+    white-space: break-spaces;
+    word-break: break-all;
+}
+
+.eachFarmFarmerIntroBox::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.eachFarmFarmerIntroBox::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.eachFarmFarmerGuildBox {
+    width: 96%;
+    height: 50%;
+    padding-right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--medium-font);
+    line-height: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.eachFarmFarmerGuestBookWriteBox {
+    width: 96%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eachFarmFindInputBox {
+    width: 70%;
+    height: 100%;
+    border-radius: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0.4rem;
+    background-color: white;
+}
+
+.eachFarmFindIcon {
+    width: 0.95rem;
+    height: 0.95rem;
+    cursor: pointer;
+}
+
+.eachFarmFarmerGuestBookSearch {
+    margin-left: var(--medium-font);
+    width: 100%;
+    height: 100%;
+    font-size: 0.95rem;
+    border: 0;
+}
+
+.eachFarmFarmerGuestBookSearch:focus {
+    outline: none;
+}
+
+.eachFarmFarmerGuestBookSearch:focus {
+    outline: none;
+}
+
+.eachFarmFarmerGuestBookSearch::placeholder {
+    color: var(--dark-gray-color);
+}
+
+.eachFarmFarmerGuestBookSearch:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.eachFarmFarmerGuestBookWriteBoxButton {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.95rem;
+}
+
+.eachFarmFarmerGuestBookBox {
+    width: 96%;
+    height: 88%;
+    padding: 0rem 0.8rem 0rem 0.4rem;
+    overflow-y: scroll;
+}
+
+.eachFarmFarmerGuestBookBox::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.eachFarmFarmerGuestBookBox::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.eachFarmFarmerGuestBookEachBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.eachFarmFarmerGuestBookEachHeaderBox {
+    width: 100%;
+    height: 1.4rem;
+    padding: 0rem calc(0.25 * var(--medium-padding));
+    font-size: var(--medium-font);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom: rgba(0, 0, 0, 0.5) 0.01rem solid;
+}
+
+.eachFarmFarmerGuestBookNoName {
+    font-size: var(--medium-font);
+    width: 50%;
+}
+
+.eachFarmFarmerGuestBookTime {
+    font-size: var(--small-font);
+}
+
+.eachFarmFarmerGuestBookDelete {
+    font-size: var(--small-font);
+    cursor: pointer;
+}
+
+.eachFarmFarmerGuestBookDelete:hover {
+    text-shadow: 0rem 0rem 0.2rem var(--white-transparent-color);
+}
+
+.eachFarmFarmerGuestBookEachBodyBox {
+    width: 100%;
+    padding: calc(0.25 * var(--medium-padding));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.eachFarmFarmerGuestBookEachBodyImageBox {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.eachFarmFarmerGuestBookEachBodySpan {
+    width: 75%;
+    line-height: 1.5rem;
+    color: black;
+    font-size: var(--medium-font);
+    white-space: break-spaces;
+    word-break: break-all;
+}
+
+.eachFarmFarmerNeighborBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eachFarmFarmerNeighborEach {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eachFarmFarmerNeighborTitle {
+    width: 100%;
+    height: 6%;
+    padding-left: 0.2rem;
+    font-size: var(--big-font);
+}
+
+.eachFarmFarmerNeighborBodyBox {
+    width: 100%;
+    height: 90%;
+    padding: 0rem 4% 0rem 0rem;
+    overflow-y: scroll;
+}
+
+.eachFarmFarmerNeighborBodyBox::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.eachFarmFarmerNeighborBodyBox::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.eachFarmFarmerNeighborBodyEachBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    margin-bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    cursor: pointer;
+    transition: all 0.25 ease-in-out;
+}
+
+.eachFarmFarmerNeighborBodyEachBox:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.eachFarmFarmerNeighborBodyEachImageBox {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.eachFarmFarmerNeighborBodyEachDetailBox {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eachFarmFarmerNeighborBodyEachDetailName {
+    font-size: var(--medium-font);
+}
+
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    /* FARM */
+    .farmFindCenterLine,
+    .farmFindPreviewBox {
+        display: none;
+    }
+
+    .farmFindHeader {
+        width: 100%;
+        height: 32%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .farmFindTotalSelectBox {
+        width: 100%;
+        height: 30%;
+    }
+
+    .farmFindSelect {
+        width: 40%;
+        height: 80%;
+        font-size: var(--medium-font);
+        text-align: center;
+    }
+
+    .farmFindInputBoxWhole {
+        width: 100%;
+        height: 60%;
+    }
+
+    .farmFindInputBox {
+        width: 70%;
+        height: 60%;
+        border-radius: 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem calc(0.75 * var(--medium-padding));
+        background-color: white;
+    }
+
+    .farmFindBody {
+        width: 100%;
+        height: 64%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .farmFindFilterBox {
+        width: 100%;
+        height: 100%;
+    }
+
+    .farmFindIcon {
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+    }
+
+    .farmFindInput {
+        margin-left: calc(0.75 * var(--medium-padding));
+        width: 100%;
+        height: 100%;
+        font-size: var(--big-font);
+        border: 0;
+    }
+
+    .farmFindSelect:focus {
+        outline: none;
+    }
+
+    .farmFindOption {
+        font-size: 2rem;
+    }
+
+    .farmFindFilterCheck {
+        margin-left: var(--medium-padding);
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .farmFindFilterReset {
+        margin-left: var(--medium-padding);
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .myFarmSkinIconBox {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .farmFindListBox {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: scroll;
+    }
+
+    .paginationFooter {
+        width: 100%;
+        height: 8%;
+    }
+
+    .farmFindListBox::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+        background-color: var(--dark-gray-color);
+    }
+
+    .farmFindListBox::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+        background-color: var(--gray-color);
+    }
+
+    .farmFindListGrid {
+        width: 95%;
+        margin-right: 2%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-gap: var(--medium-padding);
+    }
+
+    .farmerListBox {
+        padding: 3rem 3rem;
+        border-radius: 2rem;
+    }
+
+    .farmerImage {
+        width: 25%;
+    }
+
+    .farmerInfoSignImage {
+        width: 30%;
+        position: absolute;
+        top: 1rem;
+    }
+
+    .farmerInfoBox {
+        width: 70%;
+        height: 95%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .farmerInfoName {
+        font-size: var(--big-font);
+    }
+
+    .farmerInfoAddress {
+        font-size: var(--micro-font);
+    }
+
+    .farmerInfoRank {
+        padding: 1rem 2rem;
+        font-size: var(--small-font);
+    }
+
+    .farmerInfoChickizQuan {
+        margin-left: calc(0.5 * var(--medium-padding));
+        padding: 1rem 2rem;
+        font-size: var(--small-font);
+    }
+
+    .farmerInfoLoveQuan {
+        margin-left: calc(0.5 * var(--medium-padding));
+        padding: 1rem 2rem;
+        font-size: var(--small-font);
+    }
+
+    .farmerInfoLoveImg {
+        width: calc(0.8 * var(--small-font));
+    }
+
+    /* EACH FARM */
+    .farmImageBoxEach {
+        width: 100%;
+        height: 66rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+    }
+
+    .eachFarmFarmerBox {
+        width: 96%;
+        height: 23rem;
+    }
+
+    .eachFarmFarmerImage {
+        width: 23rem;
+        height: 23rem;
+    }
+
+    .eachFarmFarmerSubBox {
+        height: 75%;
+    }
+
+    .eachFarmFarmerSubTitle {
+        font-size: var(--big-font);
+    }
+
+    .eachFarmFarmerSubTitleSelected {
+        font-size: var(--big-font);
+        border-bottom: 0.5rem solid var(--yellow-color);
+    }
+
+    .eachFarmFarmerInfoBox {
+        width: 65%;
+    }
+
+    .eachFarmFarmerBasicBox {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .eachFarmFarmerName {
+        font-size: var(--big-font);
+    }
+
+    .eachFarmIcon {
+        width: 3.5rem;
+        height: 3.5rem;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .eachFarmFarmerAddress {
+        margin-top: var(--medium-padding);
+        font-size: var(--micro-font);
+        overflow-x: hidden;
+    }
+
+    .eachFarmFarmerKNS{
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0.8rem;
+    }
+
+    .eachFarmFarmerAddressCopy{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: 1.5rem;
+        cursor: pointer;
+    }
+
+    .eachFarmFarmerDetails {
+        width: 100%;
+        display: flex;
+        height: 30%;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .eachFarmFarmerDetail {
+        padding: 1rem 2rem;
+        font-size: var(--small-font);
+        margin-right: calc(0.5 * var(--medium-padding));
+    }
+
+    .eachFarmFarmerIntroBox {
+        line-height: 5rem;
+    }
+
+    .eachFarmFarmerIntroBox::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .eachFarmFarmerIntroBox::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .eachFarmFindInputBox {
+        border-radius: 0.4rem;
+        padding: 0rem calc(0.5*var(--medium-padding));
+    }
+
+    .eachFarmFindIcon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .eachFarmFarmerGuestBookSearch {
+        margin-left: calc(0.5*var(--medium-padding));
+        font-size: var(--medium-font);
+    }
+
+    .eachFarmFarmerGuestBookWriteBoxButton {
+        padding: 1rem 2rem;
+        font-size: var(--medium-font);
+    }
+
+    .eachFarmFarmerGuestBookBox {
+        padding: 0rem 2rem 0rem 1rem;
+    }
+
+    .eachFarmFarmerGuestBookBox::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .eachFarmFarmerGuestBookBox::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .eachFarmFarmerGuestBookEachHeaderBox {
+        height: 6rem;
+        padding: 0rem calc(0.5 * var(--medium-padding));
+        font-size: var(--medium-font);
+    }
+
+    .eachFarmFarmerGuestBookNoName {
+        font-size: var(--medium-font);
+        width: 50%;
+    }
+
+    .eachFarmFarmerGuestBookTime {
+        font-size: var(--small-font);
+    }
+
+    .eachFarmFarmerGuestBookDelete {
+        font-size: var(--small-font);
+    }
+
+    .eachFarmFarmerGuestBookEachBodyBox {
+        padding: calc(0.5 * var(--medium-padding));
+    }
+
+    .eachFarmFarmerGuestBookEachBodySpan {
+        line-height: 5rem;
+        font-size: var(--medium-font);
+    }
+
+
+    .eachFarmFarmerNeighborTitle {
+        padding-left: 2rem;
+    }
+
+
+    .eachFarmFarmerNeighborBodyBox::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+        background: var(--dark-gray-color);
+    }
+
+    .eachFarmFarmerNeighborBodyBox::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+        background: var(--gray-color);
+    }
+
+    .eachFarmFarmerNeighborBodyEachBox {
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+
+    .eachFarmFarmerNeighborBodyEachDetailName {
+        font-size: var(--medium-font);
+    }
+
+    .eachFarmFarmerNeighborBodyBox>.noNFTBox>.noNFT {
+        width: 80%;
+    }
+
+    /* MY FARM */
+    .myFarm_mobile .pageContentBox {
+        justify-content: flex-end;
+        margin-top: var(--medium-padding);
+    }
+
+    .farmImageBox {
+        width: 100%;
+        height: 58.4rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+    }
+
+    .myFarmNFTBox1,
+    .myFarmNFTBox2,
+    .myFarmNFTBox3 {
+        display: none;
+    }
+
+    .myFarm_mobileWarning {
+        display: block;
+        font-size: var(--big-font);
+        color: var(--red-color);
+    }
+}

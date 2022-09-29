@@ -1,0 +1,765 @@
+.miningBig_whole{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miningBig_loading_whole{
+    width: 3rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.miningBig_loading{
+    width: 3rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.miningBig_loading_span{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.miningBig_header{
+    width: 100%;
+    height: 2rem;
+    padding-right: 1rem;
+    background-color: var(--yellow-color);
+    display: flex;
+    align-items: center;
+}
+
+.miningBig_headerEach{
+    color: black;
+    height: 100%;
+    display: flex;
+    border-right: 0.01rem solid black;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.miningBig_headerEach:nth-child(1),
+.miningBig_tableEach_Each:nth-child(1){
+    width: 10%;
+}
+
+.miningBig_headerEach:nth-child(4),
+.miningBig_headerEach:nth-child(5),
+.miningBig_tableEach_Each:nth-child(4),
+.miningBig_tableEach_Each:nth-child(5){
+    width: 8.5%;
+}
+
+.miningBig_headerEach:nth-child(2),
+.miningBig_tableEach_Each:nth-child(2){
+    width: 15.5%;
+}
+
+.miningBig_headerEach:nth-child(6),
+.miningBig_tableEach_Each:nth-child(6){
+    width: 12.5%;
+}
+
+.miningBig_headerEach:nth-child(3),
+.miningBig_headerEach:nth-child(7),
+.miningBig_tableEach_Each:nth-child(3),
+.miningBig_tableEach_Each:nth-child(7){
+    width: 22.5%;
+}
+
+.miningBig_headerEach:last-child,
+.miningBig_tableEach_Each:last-child{
+    border-right: none;
+}
+
+.miningBig_no{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miningBig_body{
+    width: 100%;
+    height: 93%;
+    padding-right: 0.85rem;
+    display: flex;
+    overflow-y: scroll;
+}
+
+.miningBig_body::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.miningBig_body::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.miningBig_table{
+    width: 100%;
+}
+
+.miningBig_tableEach{
+    width: 100%;
+    height: 3.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.01rem solid black;
+    color: black;
+    background-color: white;
+}
+
+.miningBig_tableEach_Each{
+    color: black;
+    height: 100%;
+    display: flex;
+    border-right: 0.01rem solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.miningSmall_whole{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miningSmall_boxSelected{
+    width: 100%;
+    height: 9rem;
+    border: 0.01rem solid var(--gray-color);
+    display: flex;
+    padding: 0.5rem 0rem;
+}
+
+.miningSmall_boxSmall{
+    width: 100%;
+    height: 3rem;
+    border: 0.01rem solid var(--gray-color);
+    display: flex;
+    padding: 0.5rem 0rem;
+}
+
+.miningSmall_boxTitle{
+    width: 35%;
+    height: 100%;
+    border-right: 0.01rem solid var(--gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.miningSmall_boxContent{
+    width: 65%;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.miningSmall_boxContent_icon{
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-left: 1rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.miningSmall_selectedGrid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.miningSmall_selectedGridEach{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.miningSmall_tab{
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miningSmall_tabEach{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green-color);
+    border: 0.01rem solid var(--green-color);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.miningSmall_tabEachSelected{
+    background-color: var(--green-color);
+    color: white;
+}
+
+.miningSmall_boxAction{
+    width: 100%;
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miningSmall_desc{
+    width: 100%;
+    height: 11rem;
+    padding: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--red-color);
+    line-height: 1.5rem;
+}
+
+.miningSmall_prediction{
+    width: 100%;
+    height: 4rem;
+    color: black;
+    display:flex;
+    border-top: 0.01rem solid var(--gray-color);
+    justify-content: space-between;
+    align-items:center;
+    font-size: 1.2rem;
+}
+
+.miningSmall_Button{
+    width: 100%;
+    height: 2.2rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miningSmall_ButtonLoading{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+/* image */
+
+.miningHeaderIcon{
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.miningHeaderIcon:last-child{
+    margin-left: 0.8rem;
+}
+
+.miningBig_table_id_picture_div{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.miningBig_table_id_picture{
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+}
+
+.miningBig_table_mentor_picture{
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.miningBig_tableEach_Token{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.miningBig_tableEach_Chick{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+/* semo */
+.miningSemo_asc{
+    margin-left: 0.5rem;
+    width: 1rem;
+    height: 0.5rem;
+    border-bottom: 0.6rem solid var(--red-color);
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+}
+
+.miningSemo_desc{
+    margin-left: 0.5rem;
+    width: 1rem;
+    height: 0.5rem;
+    border-top: 0.6rem solid var(--green-color);
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+}
+
+/* checkbox */
+
+.miningBig_checkbox{
+    color: var(--dark-gray-color);
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    font-size: var(--medium-font);
+    cursor: pointer;
+}
+
+.miningBig_checkbox > input{
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+
+@supports (-webkit-appearance:none) or (-moz-appearance:none){
+    .miningBig_checkbox > input[type="checkbox"]{
+        background-color: white;
+        border: 0.1rem solid #9f9f9f;
+        border-radius: 0.2rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .miningBig_checkbox > input[type="checkbox"]:checked{
+        background-color: var(--green-color);
+        border: 0.1rem solid var(--green-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    .miningBig_whole{
+        width: 100%;
+        height: 92%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow-x: scroll;
+    }
+    
+    .miningBig_whole::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+        background: var(--dark-gray-color);
+    }
+    
+    .miningBig_whole::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+        background: var(--gray-color);
+    }
+    
+    .miningBig_header{
+        width: 200%;
+        height: 8rem;
+        padding-right: 1.85rem;
+        background-color: var(--yellow-color);
+        display: flex;
+        align-items: center;
+    }
+    
+    .miningBig_headerEach{
+        color: black;
+        height: 100%;
+        display: flex;
+        border-right: 0.01rem solid black;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: var(--big-font);
+    }
+    
+    .miningBig_headerEach:nth-child(1),
+    .miningBig_tableEach_Each:nth-child(1){
+        width: 10%;
+    }
+    
+    .miningBig_headerEach:nth-child(4),
+    .miningBig_headerEach:nth-child(5),
+    .miningBig_tableEach_Each:nth-child(4),
+    .miningBig_tableEach_Each:nth-child(5){
+        width: 8.5%;
+    }
+    
+    .miningBig_headerEach:nth-child(2),
+    .miningBig_tableEach_Each:nth-child(2){
+        width: 15.5%;
+    }
+    
+    .miningBig_headerEach:nth-child(6),
+    .miningBig_tableEach_Each:nth-child(6){
+        width: 12.5%;
+    }
+    
+    .miningBig_headerEach:nth-child(3),
+    .miningBig_headerEach:nth-child(7),
+    .miningBig_tableEach_Each:nth-child(3),
+    .miningBig_tableEach_Each:nth-child(7){
+        width: 22.5%;
+    }
+    
+    .miningBig_headerEach:last-child,
+    .miningBig_tableEach_Each:last-child{
+        border-right: none;
+    }
+    
+    .miningBig_no{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .miningBig_body{
+        width: 200%;
+        height: 92%;
+        padding-right: 0.85rem;
+        display: flex;
+        overflow-y: scroll;
+    }
+    
+    .miningBig_body::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+        background: var(--dark-gray-color);
+    }
+    
+    .miningBig_body::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+        background: var(--gray-color);
+    }
+    
+    .miningBig_table{
+        width: 100%;
+    }
+    
+    .miningBig_tableEach{
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.01rem solid black;
+        color: black;
+        background-color: white;
+        font-size: calc(0.9*var(--big-font));
+    }
+    
+    .miningBig_tableEach_Each{
+        color: black;
+        height: 100%;
+        display: flex;
+        border-right: 0.01rem solid black;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .miningSmall_whole{
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        border-radius: var(--medium-padding);
+        padding: var(--medium-padding);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .miningSmall_boxSelected{
+        width: 100%;
+        height: 45rem;
+        border: 0.01rem solid var(--gray-color);
+        display: flex;
+        padding: 2rem 0rem;
+    }
+    
+    .miningSmall_boxSmall{
+        width: 100%;
+        height: 10rem;
+        border: 0.01rem solid var(--gray-color);
+        display: flex;
+        padding: 0.5rem 0rem;
+    }
+    
+    .miningSmall_boxTitle{
+        width: 35%;
+        height: 100%;
+        border-right: 0.01rem solid var(--gray-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-align: center;
+        font-size: var(--big-font);
+    }
+    
+    .miningSmall_boxContent{
+        width: 65%;
+        height: 100%;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        font-size: var(--big-font);
+    }
+    
+    .miningSmall_boxContent_icon{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: 2rem;
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .miningSmall_selectedGrid{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    
+    .miningSmall_selectedGridEach{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .miningSmall_tab{
+        width: 100%;
+        height: 8rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .miningSmall_tabEach{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--green-color);
+        border: 0.01rem solid var(--green-color);
+        border-radius: 4rem;
+        cursor: pointer;
+        font-size:var(--big-font);
+    }
+    
+    .miningSmall_tabEachSelected{
+        background-color: var(--green-color);
+        color: white;
+    }
+    
+    .miningSmall_boxAction{
+        width: 100%;
+        height: 65rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .miningSmall_desc{
+        width: 100%;
+        height: 40rem;
+        padding: 0rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: var(--red-color);
+        font-size: var(--medium-font);
+        line-height: calc(1.5*var(--medium-font));
+    }
+    
+    .miningSmall_prediction{
+        width: 100%;
+        height: 17rem;
+        color: black;
+        display:flex;
+        border-top: 0.01rem solid var(--gray-color);
+        justify-content: space-between;
+        align-items:center;
+        font-size: var(--big-font);
+    }
+    
+    .miningSmall_Button{
+        width: 100%;
+        height: 8rem;
+        font-size: calc(1.1*var(--big-font));
+    }
+
+    .miningSmall_ButtonLoading{
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    
+    /* image */
+    
+    .miningHeaderIcon{
+        width: 6rem;
+        height: 6rem;
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .miningHeaderIcon:last-child{
+        margin-left: 2rem;
+    }
+    
+    .miningBig_table_id_picture_div{
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .miningBig_table_id_picture{
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+    }
+    
+    .miningBig_table_mentor_picture{
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .miningBig_tableEach_Token{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .miningBig_tableEach_Chick{
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1.5rem;
+    }
+    
+    /* semo */
+    .miningSemo_asc{
+        margin-left: 1.5rem;
+        width: 3rem;
+        height: 1.5rem;
+        border-bottom: 1.8rem solid var(--red-color);
+        border-left: 1.5rem solid transparent;
+        border-right: 1.5rem solid transparent;
+    }
+    
+    .miningSemo_desc{
+        margin-left: 1.5rem;
+        width: 3rem;
+        height: 1.5rem;
+        border-top: 1.8rem solid var(--green-color);
+        border-left: 1.5rem solid transparent;
+        border-right: 1.5rem solid transparent;
+    }
+    
+    /* checkbox */
+    
+    .miningBig_checkbox{
+        color: var(--dark-gray-color);
+        display: flex;
+        align-items: center;
+        height: 2.5rem;
+        font-size: var(--medium-font);
+        cursor: pointer;
+    }
+    
+    .miningBig_checkbox > input{
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+    }
+    
+    
+    @supports (-webkit-appearance:none) or (-moz-appearance:none){
+        .miningBig_checkbox > input[type="checkbox"]{
+            background-color: white;
+            border: 0.1rem solid #9f9f9f;
+            border-radius: 0.2rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+    
+        .miningBig_checkbox > input[type="checkbox"]:checked{
+            background-color: var(--green-color);
+            border: 0.1rem solid var(--green-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

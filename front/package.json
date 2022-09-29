@@ -1,0 +1,46 @@
+{
+  "name": "chickifarm",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 8000",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
+    "@widgetbot/crate": "^3.3.4",
+    "@widgetbot/react-embed": "^1.4.1",
+    "axios": "^0.26.1",
+    "caver-js": "^1.8.1",
+    "classnames": "^2.3.1",
+    "crypto-browserify": "^3.12.0",
+    "ethers": "^5.6.9",
+    "https-browserify": "^1.0.0",
+    "klip-sdk": "^2.0.1",
+    "moment": "^2.29.3",
+    "next": "12.1.5",
+    "next-qrcode": "^2.0.0",
+    "next-redux-wrapper": "^7.0.5",
+    "next-seo": "^5.4.0",
+    "querystring": "^0.2.1",
+    "react": "18.0.0",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "18.0.0",
+    "react-draggable": "^4.4.4",
+    "react-intersection-observer": "^9.0.0",
+    "react-redux": "^8.0.1",
+    "react-slick": "^0.29.0",
+    "redux-logger": "^3.0.6",
+    "sharp": "^0.30.4",
+    "slick-carousel": "^1.8.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5"
+  }
+}

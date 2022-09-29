@@ -1,0 +1,448 @@
+/* etc */
+.tabletPortraitWarning {
+  display: none;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 4.2rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0rem;
+}
+
+.headerUserInfo {
+  width: 27%;
+  height: 100%;
+  padding: 0rem var(--medium-padding);
+  background-color: var(--black-transparent-color);
+  border-bottom-right-radius: 4.2rem 4.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.userInfoLogoBoxBox {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.userInfoLogoBox {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.userInfoLogoTitle {
+  margin-left: 0.4rem;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+.userInfoConnectButton {
+  margin-left: var(--medium-padding);
+  padding: 0.5rem 0.8rem;
+  font-size: 0.95rem;
+}
+
+.userInfoImageBox {
+  width: 3rem;
+  height: 3rem;
+  border: 0.1rem solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.userInfoImage {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.userInfoDetailsBox {
+  margin-left: var(--medium-padding);
+  height: calc(2 * var(--medium-padding));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userInfoDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userInfoAddress {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  font-size: var(--small-font);
+}
+
+.userInfoKNS{
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.2rem;
+}
+
+.userInfoKNSBox{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userInfoName {
+  font-size: var(--big-font);
+}
+
+.userInfoRank {
+  margin-left: var(--medium-padding);
+  padding: 0.2rem 0.6rem;
+  font-size: 1rem;
+  text-align: center;
+  background-color: var(--bronze-color);
+}
+
+.userInfoDetails_detail {
+  display: flex;
+  align-items: center;
+}
+
+.headerUserInfoSettingBox {
+  margin-left: var(--medium-padding);
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.headerUserInfoSettingBox:hover .image100 {
+  filter: drop-shadow(0rem 0rem 0.2rem var(--white-transparent-color));
+}
+
+.headerUserWealthBox {
+  display: flex;
+  align-items: center;
+  height: 2.8rem;
+}
+
+.headerUserWealth {
+  width: 12rem;
+  height: 100%;
+  background-color: var(--black-transparent-color);
+  height: 100%;
+  padding: 0rem 0.7rem 0rem 0.35rem;
+  margin: 0rem var(--medium-padding);
+  border-radius: var(--medium-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerUserWealthSymbol {
+  width: 2.35rem;
+  height: 2.35rem;
+}
+
+.headerUserWealthValueBox {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.headerUserWealthPlus {
+  margin-left: calc(var(--medium-padding) / 2);
+  width: var(--medium-padding);
+  height: var(--medium-padding);
+  cursor: pointer;
+}
+
+.headerNotification {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  bottom: 0rem;
+  position: fixed;
+  height: 3.6vw;
+  padding: 0rem var(--medium-padding) calc(var(--medium-padding) / 2);
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLogoBox {
+  background-color: var(--black-transparent-color);
+  height: 2.8rem;
+  padding: 0rem calc(0.75 * var(--medium-padding));
+  border-radius: var(--medium-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.footerLogoBox:hover .footerLogoImageBox>img {
+  filter: drop-shadow(0rem 0rem 0.2rem var(--white-transparent-color));
+}
+
+.footerLogoBox:hover .footerLogoTitle {
+  text-shadow: 0rem 0rem 0.2rem white;
+}
+
+.footerLogoImageBox {
+  width: 1rem;
+  height: 1rem;
+}
+
+.footerLogoTitle {
+  margin-left: calc(var(--medium-padding) / 2);
+  color: white;
+  font-size: 1rem;
+  transition: color 0.25s ease-in-out;
+}
+
+.copyright {
+  color: black;
+  font-size: 1rem;
+  margin-right: 4.5rem;
+}
+
+/* SUBMENUBAR */
+.subMenuBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4.4%;
+  height: 64%;
+  background-color: var(--black-transparent-color);
+  border-top-right-radius: var(--medium-padding);
+  border-bottom-right-radius: var(--medium-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--medium-padding) calc(0.8 * var(--medium-padding)) var(--medium-padding) calc(0.7 * var(--medium-padding));
+}
+
+.subMenuBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+.subMenuSpan {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: calc(0.25 * var(--medium-padding));
+  font-size: var(--small-font);
+  color: white;
+}
+
+.notificationDot {
+  position: absolute;
+  top: -5%;
+  right: -30%;
+  width: 60%;
+  height: 35%;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  font-size: var(--small-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .tabletPortraitWarning {
+    position: fixed;
+    top: 0rem;
+    display: block;
+    color: white;
+    background-color: var(--red-color);
+    font-size: 2rem;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header {
+    margin-top: 4rem;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  /* Header */
+  .header {
+    width: 100%;
+    height: 16rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    top: 0rem;
+  }
+
+  .userInfoLogoBoxBox {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .headerUserInfo {
+    width: 100%;
+    padding: 0rem var(--medium-padding);
+    border-radius: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .userInfoLogoBox {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .userInfoLogoTitle {
+    margin-left: var(--medium-padding);
+    font-size: 7rem;
+    font-style: italic;
+  }
+
+  .userInfoConnectButton {
+    display: none;
+    padding: 2rem 2rem;
+    font-size: 3.5rem;
+  }
+
+  .userInfoImageBox {
+    width: 10rem;
+    height: 10rem;
+    border: 0.5rem solid white;
+  }
+
+  .userInfoImage {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .userInfoDetailsBox {
+    height: 10rem;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .userInfoDetails {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .userInfoAddress {
+    font-size: 2rem;
+    display:none;
+  }
+
+  .userInfoName {
+    font-size: 6rem;
+  }
+
+  .userInfoRank {
+    margin-left: var(--medium-padding);
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
+    text-align: center;
+    background-color: var(--bronze-color);
+  }
+
+  .headerUserInfoSettingBox {
+    margin-left: var(--medium-padding);
+    width: 4rem;
+    height: 4rem;
+    display: none;
+  }
+
+  .headerUserWealthBox {
+    display: none;
+  }
+
+  .headerNotification{
+    display: flex;
+    width: 6rem;
+    position: relative;
+  }
+
+  .headerNotification_redDot{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    top: -20%;
+    right:-20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--red-color);
+    font-size: var(--micro-font);
+  }
+
+  /* Footer */
+  .footer {
+    width: 100%;
+    height: 12rem;
+    position: static;
+    margin-top: var(--column-padding);
+    padding-left: 0rem;
+  }
+
+  .footerLogoBox {
+    background-color: var(--black-transparent-color);
+    width: 12rem;
+    height: 8rem;
+    padding: 0rem 0rem;
+    border-radius: 0rem;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .footerLogoTitle {
+    display: none;
+  }
+
+  .footerLogoImageBox {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .copyright {
+    font-size: 2rem;
+  }
+
+  /* SUBMENUBAR */
+  .subMenuBar{
+    display: none;
+  }
+}

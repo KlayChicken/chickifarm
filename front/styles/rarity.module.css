@@ -1,0 +1,704 @@
+.raritySmallWholeBox{
+  width: 100%;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rarityFindBox {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rarityFindInputBox {
+    width: 25%;
+    height: 100%;
+    border-radius: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0.4rem;
+    background-color: white;
+}
+
+.rarityFindIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.rarityFindInput {
+    margin-left: var(--medium-font);
+    width: 60%;
+    height: var(--medium-padding);
+    font-size: var(--big-font);
+    border: 0;
+}
+
+.rarityFindInput:focus {
+    outline: none;
+}
+
+.rarityFindInput:focus {
+    outline: none;
+}
+
+.rarityFindInput::placeholder {
+    color: var(--dark-gray-color);
+}
+
+.rarityFindInput:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.rarityFilter{
+  width: 40%;
+  height: 2rem;
+  font-size: var(--big-font);
+  text-align: center;
+}
+
+/* TABLE */
+
+.raritySelectTable{
+  width: 100%;
+  height: 91%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12,1fr);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.raritySelectEachBox{
+  width: 100%;
+  height: 100%;
+  border-bottom: 0.01rem solid var(--gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+/*
+.raritySelectEachBox:hover{
+  background-color: #f3f5f7;
+}
+*/
+
+.raritySelectEachBox:last-child{
+  border-bottom: none;
+}
+
+.raritySelectImage{
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+}
+
+.raritySelectList{
+  font-size: 1.1rem;
+  width: 75%;
+  display: flex;
+  align-items: center;
+}
+
+.raritySelecctPickedNum{
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 1rem;
+  border-radius: 0.2rem;
+  font-size: var(--medium-font);
+  background-color: var(--green-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.raritySelectPlus{
+  font-size: 1.5rem;
+}
+
+.raritySelectedBox{
+  width: 100%;
+  height: 100%;
+  border-bottom: 0.01rem solid var(--gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.raritySelectedDetailBoxWhole{
+  width: 100%;
+  height: 95%;
+  grid-row: 2/13;
+  padding: 0rem 0rem 0rem 2rem;
+  overflow-y: scroll;
+}
+
+.raritySelectedDetailBoxWhole::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.raritySelectedDetailBoxWhole::-webkit-scrollbar-thumb {
+  width: 0.15rem;
+  height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.raritySelectedDetailBoxEach{
+  color: var(--dark-gray-color);
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  font-size: var(--medium-font);
+  cursor: pointer;
+}
+
+.raritySelectedDetailBoxEach > input{
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+
+@supports (-webkit-appearance:none) or (-moz-appearance:none){
+  .raritySelectedDetailBoxEach > input[type="checkbox"]{
+    background-color: white;
+    border: 0.1rem solid #9f9f9f;
+    border-radius: 0.2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  .raritySelectedDetailBoxEach > input[type="checkbox"]:checked{
+    background-color: var(--green-color);
+    border: 0.1rem solid var(--green-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* BIG */
+.rarityBigMyButton{
+  width: 8rem;
+  height: 2rem;
+  color: white;
+  display: flex;
+  border: 0.1rem solid white;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.rarityBigMyButton:hover{
+  width: 8rem;
+  height: 2rem;
+  color: var(--yellow-color);
+  display: flex;
+  border: 0.1rem solid var(--yellow-color);
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rarityMyOn{
+  margin-left: 0.5rem;
+  color: var(--green-color);
+}
+
+.rarityMyOff{
+  margin-left: 0.5rem;
+  color: var(--red-color);
+}
+
+.rarityBigWholeBox{
+  width: 100%;
+  height: 84%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rarityBigFilterWholeBox{
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.rarityBigFilterIndex{
+  height: 2rem;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.rarityBigFilterIndexIcon{
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.rarityBigFilterBox{
+  height: 2rem;
+  display: flex;
+  overflow-x:scroll;
+}
+
+.rarityBigFilterBox::-webkit-scrollbar {
+  display: none;
+}
+
+.rarityBigFilterBox::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.rarityBigFilter{
+  height: 2rem;
+  padding: 0rem 0.5rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+  white-space: nowrap;
+}
+
+.rarityBigFilter:hover{
+  background-color: #d3d5d7;
+}
+
+.rarityBigFilterIcon{
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.rarityBigFilterIcon2{
+  width: 0.8rem;
+  height: 0.8rem;
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+/* FOR MOBILE */
+.rarityMobileBox{
+  display:none;
+}
+
+.rarityMobileBox2{
+  display:none;
+}
+
+.raritySelectMobileController{
+  display: none;
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .raritySmallWholeBox{
+    width: 100%;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .rarityFindBox {
+      width: 100%;
+      height: 8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .rarityFindInputBox {
+      width: 25%;
+      height: 100%;
+      border-radius: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0rem 2rem;
+      background-color: white;
+  }
+  
+  .rarityFindIcon {
+      width: 4rem;
+      height: 4rem;
+      display: flex;
+      cursor: pointer;
+  }
+  
+  .rarityFindInput {
+      margin-left: var(--medium-font);
+      width: 60%;
+      height: 8rem;
+      font-size: var(--big-font);
+      border: 0;
+  }
+  
+  .rarityFindInput:focus {
+      outline: none;
+  }
+  
+  .rarityFindInput:focus {
+      outline: none;
+  }
+  
+  .rarityFindInput::placeholder {
+      color: var(--dark-gray-color);
+  }
+  
+  .rarityFindInput:focus::-webkit-input-placeholder {
+      color: transparent;
+  }
+  
+  .rarityFilter{
+    width: 40%;
+    height: 8rem;
+    font-size: var(--big-font);
+    text-align: center;
+  }
+  
+  /* TABLE */
+  
+  .raritySelectTable{
+    width: 50vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(13,1fr);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 0rem;
+    padding: 0.5rem;
+    position: fixed;
+    z-index: 10004;
+    top: 0;
+    right: 0;
+  }
+  
+  .raritySelectEachBox{
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.01rem solid var(--gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 0 4rem;
+    cursor: pointer;
+  }
+  
+  /*
+  .raritySelectEachBox:hover{
+    background-color: #f3f5f7;
+  }
+  */
+  
+  .raritySelectEachBox:last-child{
+    border-bottom: none;
+  }
+  
+  .raritySelectImage{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+  }
+  
+  .raritySelectList{
+    font-size: 3.5rem;
+    width: 75%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .raritySelecctPickedNum{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem;
+    border-radius: 0.2rem;
+    font-size: 3rem;
+    background-color: var(--green-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .raritySelectPlus{
+    font-size: 3rem;
+  }
+  
+  .raritySelectedBox{
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.01rem solid var(--gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 0 4rem;
+    cursor: pointer;
+  }
+  
+  .raritySelectedDetailBoxWhole{
+    width: 100%;
+    height: 95%;
+    grid-row: 3/14;
+    padding: 0rem 0rem 0rem 6rem;
+    overflow-y: scroll;
+  }
+  
+  .raritySelectedDetailBoxWhole::-webkit-scrollbar {
+      width: 1rem;
+      height: 1rem;
+      background: var(--gray-color);
+  }
+  
+  .raritySelectedDetailBoxWhole::-webkit-scrollbar-thumb {
+    width: 1rem;
+    height: 1rem;
+      background: var(--dark-gray-color);
+  }
+  
+  .raritySelectedDetailBoxEach{
+    color: var(--dark-gray-color);
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    font-size: 3.5rem;
+    cursor: pointer;
+  }
+  
+  .raritySelectedDetailBoxEach > input{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1.5rem;
+  }
+  
+  
+  @supports (-webkit-appearance:none) or (-moz-appearance:none){
+    .raritySelectedDetailBoxEach > input[type="checkbox"]{
+      background-color: white;
+      border: 0.3rem solid #9f9f9f;
+      border-radius: 0.4rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+  
+    .raritySelectedDetailBoxEach > input[type="checkbox"]:checked{
+      background-color: var(--green-color);
+      border: 0.3rem solid var(--green-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  /* BIG */
+.rarityBigMyButton{
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 0rem;
+}
+
+.rarityBigMyButton:hover{
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rarityMyOn,
+.rarityMyOff
+{
+  margin-left: 1.5rem;
+}
+
+.rarityBigWholeBox{
+  width: 100%;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+  .rarityBigFilterWholeBox{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .rarityBigFilterIndex{
+    height: 8rem;
+    margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size:0rem;
+  }
+  
+  .rarityBigFilterIndexIcon{
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    margin-right: 1.5rem;
+  }
+  
+  .rarityBigFilterBox{
+    height: 6rem;
+    display: flex;
+    overflow-x:scroll;
+  }
+  
+  .rarityBigFilterBox::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .rarityBigFilterBox::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  
+  .rarityBigFilter{
+    height: 6rem;
+    padding: 0rem 1.5rem;
+    margin-right: 3rem;
+    border-radius: 3rem;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    font-size:3rem;
+  }
+  
+  .rarityBigFilter:hover{
+    background-color: #d3d5d7;
+  }
+  
+  .rarityBigFilterIcon{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    margin-right: 1.5rem;
+  }
+  
+  .rarityBigFilterIcon2{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    margin-left: 1.5rem;
+  }
+
+  /* FOR MOBILE */
+  .rarityMobileBox{
+    display:flex;
+    height: 8rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--big-font);
+  }
+
+  .rarityMobileBox2{
+    display:grid;
+    height: 8rem;
+    width: 100%;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    font-size: var(--big-font);
+  }
+
+  .rarityMobileBox_whole {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10003;
+    background-color: rgba(255, 255, 255, 0.25);
+  
+    animation-name: fadeIn;
+    animation-duration: 500ms;
+  }
+
+  .raritySelectMobileController{
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.01rem solid var(--gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding: 0 2rem;
+    cursor: pointer;
+  }
+
+  .raritySelectMobileControllerSpan{
+    font-size: var(--big-font);
+    color: var(--dark-gray-color);
+  }
+  
+  .raritySelectMobileControllerClose{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}

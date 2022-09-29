@@ -1,0 +1,762 @@
+  /* ETC */
+  .myFarmSkinIconBox {
+    width: 0.8rem;
+    height: 0.8rem;
+    cursor: pointer;
+  }
+
+  .myFarmSkinIconBox:hover .image100 {
+    filter: drop-shadow(0rem 0rem 0.2rem var(--white-transparent-color));
+  }
+
+  /* USER INFO */
+  .userInfoCaution {
+    color: var(--red-color);
+    font-size: var(--micro-font);
+    margin-bottom: var(--micro-font);
+    line-height: 1rem;
+    width: 76%;
+    align-self: flex-end;
+  }
+
+  .userInfoTag {
+    font-size: var(--medium-font);
+  }
+
+  .userInfoNotChange {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--small-font);
+    overflow-x: hidden;
+  }
+
+  .userInfoAddressCopy{
+    margin-left: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  .userInfoRankName {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--medium-font);
+    overflow-x: hidden;
+  }
+
+  .userInfoInputForName {
+    width: 50%;
+    height: 100%;
+    font-size: var(--medium-font);
+    padding: 0.2rem;
+    text-align: center;
+  }
+
+  .userInfoInput {
+    width: 80%;
+    height: 100%;
+    font-size: var(--medium-font);
+    padding: 0.2rem;
+    text-align: center;
+  }
+
+  .userInfoCheckButton {
+    width: 20%;
+    height: 90%;
+    font-size: var(--medium-font);
+  }
+
+  .userInfoTextArea,
+  .userInfoInput,
+  .userInfoInputForName:focus {
+    outline: none;
+  }
+
+  .userInfoTextArea {
+    width: 80%;
+    height: 9rem;
+    line-height: 1.5rem;
+    font-size: var(--medium-font);
+    padding: 0.2rem;
+    line-height: 1.5rem;
+    overflow-y: scroll;
+  }
+
+  .userInfoTextArea::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+  }
+
+  .userInfoTextArea::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+  }
+
+  .userInfoRepChickizBox {
+    width: 40%;
+    height: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .userInfoRepChickiz {
+    width: 1.8rem;
+  }
+
+  .userInfoRepChickizSpan {
+    font-size: var(--small-font);
+  }
+
+  .userInfoRepButton {
+    width: 32%;
+    height: 95%;
+    font-size: var(--medium-font);
+  }
+
+  .userInfoFarmSign {
+    width: 60%;
+  }
+
+  /* MY INFO */
+  .myInfoTabBox {
+    border-bottom: 0.01rem rgba(255, 255, 255, 0.15) solid;
+  }
+
+  .myInfoTab {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--big-font);
+    color: white;
+    cursor: pointer;
+  }
+
+  .myInfoTab:hover {
+    text-shadow: 0rem 0rem 0.2rem var(--white-transparent-color);
+  }
+
+  .myInfoTabSelected {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.2rem solid var(--yellow-color);
+    font-size: var(--big-font);
+    color: var(--yellow-color);
+  }
+
+  /* NFT */
+
+  .myInfoNFTBox {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .myInfoNFTBox1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .myInfoNFTBox2 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .myInfoNFTBox_big {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .myInfoNFTBox_small {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .myInfoNFTTitleBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8%;
+  }
+
+  .myInfoNFTEachTitle {
+    width: 50%;
+    font-size: calc(1.2*var(--big-font));
+    color: var(--yellow-color);
+    display: flex;
+    align-items: center;
+  }
+
+  .myInfoNFTEachTitleQuestion{
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .myInfoNFTSelect {
+    width: 30%;
+    height: 80%;
+    text-align: center;
+    font-size: var(--big-font);
+  }
+
+  .myInfoNFTSelectOption {
+    text-align: center;
+    font-size: calc(var(--medium-font)*1.2);
+  }
+
+  .myInfoNFTTitle {
+    width: 100%;
+    font-size: var(--big-font);
+    margin-bottom: calc(0.5 * var(--medium-padding));
+    /*color: var(--yellow-color);*/
+    color: white;
+  }
+
+  .myInfoNFTGridBox {
+    width: 96%;
+    height: 100%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .myInfoNFTGrid {
+    width: 100%;
+    padding: 1%;
+    height: auto;
+    display: grid;
+    grid-gap: 1rem;
+  }
+
+  .myInfoNFTLoadingBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .myInfoNFTSemiLoadingBox{
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .myInfoNFTLoadingSemiBox {
+    width: 3rem;
+    height: 6rem;
+  }
+
+  .myInfoNFTLoading {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .myInfoNFTLoadingSpan {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, .8);
+    font-size: var(--big-font);
+  }
+
+  .myInfoNFTGridBox::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+  }
+
+  .myInfoNFTGridBox::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+  }
+
+  .myInfoOtherNFTBox{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .myInfoOtherNFTListBox{
+      width: 40%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: scroll;
+      padding: 0 1rem 0 0;
+  }
+
+  .myInfoOtherNFTListBox::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+  }
+
+  .myInfoOtherNFTListBox::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+  }
+
+  .myInfoOtherNFTList{
+    width: 100%;
+    padding: 4% 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.01rem white solid;
+    cursor: pointer;
+  }
+  
+
+.myInfoOtherNFTList_selected {
+  background-color: rgba(254,229,54,0.3);
+}
+
+  .myInfoOtherNFTList:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .myInfoOtherNFTList:last-child {
+      border-bottom: none;
+  }
+
+  .myInfoOtherNFTListImageBox{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .myInfoOtherNFTListSpan1{
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+
+  .myInfoOtherNFTListSpan2{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .myInfoOtherNFTGridBox{
+    width: 58%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 0 1rem 0 0;
+  }
+
+  .myInfoOtherNFTGridBox::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+  }
+
+  .myInfoOtherNFTGridBox::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+  }
+
+  .myInfoOtherNFTGrid {
+    width: 100%;
+    padding: 1% 4%;
+    height: auto;
+    display: grid;
+    grid-gap: 1rem;
+  }
+
+  .myInfoOtherNFT_null{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .myInfoOtherNFT_nullSpan{
+    margin: 0.5rem 0rem;
+    font-size: var(--big-font);
+  }
+
+  .myInfoOtherNFT_nullButton{
+    margin-top: 1.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: calc(0.9*var(--big-font));
+  }
+
+  /* NEIGHBOR */
+
+  .myInfoNeighborBox {
+    width: 100%;
+    height: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .myInfoNeighborEachBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  .myInfoNeighborEachBox:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .myInfoNeighborEachImageBox {
+    width: 20%;
+    display: flex;
+    align-items: center;
+  }
+
+  .myInfoNeigborEachDetailBox {
+    width: 80%;
+    padding: 0rem 0rem 0rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .myInfoNeigborEachDetailName {
+    width: 65%;
+    font-size: var(--medium-font);
+  }
+
+  .myInfoNeighborEachDetailStatus {
+    width: 30%;
+    padding: 0.2rem 0rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: var(--small-font);
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  .myInfoNeighborEachDetailGreen {
+    background-color: var(--green-color);
+  }
+
+  .myInfoNeighborEachDetailRed {
+    background-color: var(--red-color);
+  }
+
+  @media screen and (max-width: 767px) and (orientation: portrait) {
+    /* MY INFO, USER INFO */
+    .userInfoCaution {
+      color: var(--red-color);
+      font-size: var(--micro-font);
+      margin-bottom: var(--micro-font);
+      line-height: 3rem;
+      margin-top: -3rem;
+      margin-bottom: -3rem;
+      width: 76%;
+      align-self: flex-end;
+    }
+
+    .userInfoTag {
+      font-size: var(--medium-font);
+    }
+
+    .userInfoNotChange {
+      height: 100%;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      font-size: var(--small-font);
+      overflow-x: hidden;
+    }
+
+    .userInfoAddressCopy{
+      margin-left: 1.5rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      cursor: pointer;
+    }
+
+    .userInfoInputForName {
+      width: 50%;
+      height: 100%;
+      font-size: var(--medium-font);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .userInfoInput {
+      width: 80%;
+      height: 100%;
+      font-size: var(--medium-font);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .userInfoCheckButton {
+      width: 20%;
+      height: 90%;
+      font-size: var(--medium-font);
+    }
+
+    .userInfoTextArea,
+    .userInfoInput,
+    .userInfoInputForName:focus {
+      outline: none;
+    }
+
+    .userInfoTextArea {
+      width: 80%;
+      height: 20rem;
+      line-height: 1.5rem;
+      font-size: var(--medium-font);
+      padding: 1rem;
+      line-height: 3rem;
+      overflow-y: scroll;
+    }
+
+    .userInfoTextArea::-webkit-scrollbar {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .userInfoTextArea::-webkit-scrollbar-thumb {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .userInfoRepChickizBox {
+      width: 40%;
+      height: 6rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .userInfoRepChickiz {
+      width: 6rem;
+    }
+
+    .myFarmSkinIconBox{
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+
+    .myInfoNFTGrid {
+      gap: 3rem;
+    }
+
+    .myInfoNFTGridBox::-webkit-scrollbar {
+      width: 1rem;
+      height: 1rem;
+      background: var(--dark-gray-color);
+    }
+
+    .myInfoNFTGridBox::-webkit-scrollbar-thumb {
+      width: 1rem;
+      height: 1rem;
+      background: var(--gray-color);
+    }
+
+    .myInfoNFTSelect {
+      width: 50%;
+    }
+    
+    .myInfoNFTSemiLoadingBox{
+      width: 100%;
+      height: 10rem;
+      margin-top: 6rem;
+      margin-bottom: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .myInfoNFTLoadingSemiBox {
+      width: 10rem;
+      height: 20rem;
+    }
+
+    .myInfoNFTLoading {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .myInfoNFTLoadingSpan {
+      width: 10rem;
+      height: 10rem;
+    }
+
+
+  .myInfoOtherNFTListBox{
+      width: 25%;
+      padding: 0 2rem 0 0;
+  }
+
+  .myInfoOtherNFTListBox::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+    background: var(--dark-gray-color);
+  }
+
+  .myInfoOtherNFTListBox::-webkit-scrollbar-thumb {
+    width: 1rem;
+    height: 1rem;
+    background: var(--gray-color);
+  }
+
+
+  .myInfoNFTEachTitleQuestion{
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-left: 1.2rem;
+    display: flex;
+    cursor: pointer;
+  }
+
+  
+
+  .myInfoOtherNFTList{
+    padding: 3rem 4%;
+  }
+
+  .myInfoOtherNFTListImageBox{
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .myInfoOtherNFTListSpan1{
+    display: none;
+  }
+
+  .myInfoOtherNFTListSpan2{
+    width: 50%;
+    font-size: var(--medium-font);
+  }
+
+  .myInfoOtherNFTGridBox{
+    width: 73%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 0 1rem 0 0;
+  }
+
+  .myInfoOtherNFTGridBox::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+    background: var(--dark-gray-color);
+  }
+
+  .myInfoOtherNFTGridBox::-webkit-scrollbar-thumb {
+    width: 1rem;
+    height:1rem;
+    background: var(--gray-color);
+  }
+
+  .myInfoOtherNFTGrid {
+    grid-gap: 3rem;
+  }
+
+  .myInfoOtherNFT_nullSpan{
+    margin: 1.5rem 0rem;
+    font-size: var(--big-font);
+  }
+
+  .myInfoOtherNFT_nullButton{
+    margin-top: 3rem;
+    padding: 1.2rem 2.4rem;
+  }
+
+
+    .mobile_grid5 {
+      grid-template-columns: repeat(5, 1fr) !important;
+      grid-gap: 2rem;
+    }
+
+    .mobile_grid4 {
+      grid-template-columns: repeat(4, 1fr) !important;
+      grid-gap: 3rem;
+    }
+
+    .mobile_grid3 {
+      grid-template-columns: repeat(3, 1fr) !important;
+      grid-gap: 3rem;
+    }
+
+    .mobile_grid2 {
+      grid-template-columns: repeat(2, 1fr) !important;
+      grid-gap: 4rem;
+    }
+
+    .myInfoNeighborEachBox {
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+
+    .myInfoNeighborEachDetailStatus {
+      padding: 0.5rem;
+    }
+
+    .myInfoTabSelected {
+      border-bottom: 0.5rem solid var(--yellow-color);
+    }
+  }

@@ -1,0 +1,2148 @@
+.raffleWholeBox {
+    width: 100%;
+    height: 92%;
+    padding: 1% 2%;
+    overflow-y: scroll;
+}
+
+.raffleWholeLoading{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.raffleWholeLoadingBox{
+    width:3rem;
+    height: 3rem;
+}
+
+.raffleWholeLoadingSpan{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, .8);
+    font-size: var(--big-font)
+}
+
+.raffleSmallWholeBox{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.raffleWholeBox::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.raffleWholeBox::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.raffleBigBox {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.raffleEachBox {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+}
+
+.raffleFavoriteBox{
+    top: 0.9rem;
+    right: 0.6rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+}
+
+.raffleIdBox {
+    top: 0.7rem;
+    right: 0.4rem;
+    position: absolute;
+    background-color: #ECC867;
+    width: 3.6rem;
+    height: 1.3rem;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.raffleId {
+    color: white;
+    font-size: var(--medium-font);
+}
+
+
+.raffleEachBox:hover {
+    filter: drop-shadow(0rem 0rem 0.25rem var(--white-transparent-color));
+}
+
+.raffleImg {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+}
+
+.raffleImg_width {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.raffleImg_height {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.raffleImgEach {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.raffleDescBox {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 1rem;
+}
+
+.raffleCollection {
+    font-size: var(--small-font);
+    height: 20%;
+}
+
+.raffleName {
+    font-size: calc(1.2*var(--medium-font));
+    height: 20%;
+}
+
+.rafflePriceTimeBox {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    align-items: center;
+}
+
+.rafflePrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1.1*var(--medium-font));
+}
+
+.raffleRemainNum {
+    font-size: calc(1.1*var(--medium-font));
+}
+
+.rafflePriceImg {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.raffleRemainTime {
+    width: 100%;
+    height: 20%;
+    border-radius: 0.2rem;
+    background-color: var(--green-color);
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.raffleTimeOut {
+    width: 100%;
+    height: 20%;
+    border-radius: 0.2rem;
+    background-color: var(--dark-gray-color);
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.raffleTimeRaffling {
+    width: 100%;
+    height: 20%;
+    border-radius: 0.2rem;
+    background-color: #fe8f38;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.raffleAlmostEnd {
+    width: 100%;
+    height: 20%;
+    border-radius: 0.2rem;
+    background-color: var(--red-color);
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.raffleTimeLoading{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.raffleTimeLoadingSpan{
+    margin-left: 0.3rem;
+}
+
+.raffleTimeBoxImage{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.5rem;
+    display:flex;
+}
+
+.rafflePageTitle {
+    font-size: var(--big-font);
+    color: var(--yellow-color);
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.raffleDetailBox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.raffleDetailBox>.raffleIdBox{
+    top: 0.75rem;
+    right: 2.6rem;
+    width: 4.6rem;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.raffleDetailBox>.raffleIdBox > .raffleId{
+    font-size: calc(1.2*(var(--medium-font)));
+}
+
+.raffleDetailHeader {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.raffleDetailImgBox {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+}
+
+.raffleDetailImgBox_width {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.raffleDetailImgBox_height {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.raffleDetailHead {
+    height: 4rem;
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.raffleDetailCollection {
+    font-size: calc(1.2*var(--medium-font));
+    color: var(--dark-gray-color);
+}
+
+.raffleDetailName {
+    font-size: calc(1.3*var(--big-font));
+}
+
+.raffleTabBox {
+    margin-top: 1rem;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.raffleTab {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green-color);
+    border: 0.01rem solid var(--green-color);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.raffleTabSelected {
+    background-color: var(--green-color);
+    color: white;
+}
+
+.raffleInfoBox {
+    width: 100%;
+    margin-top: 1rem;
+    height: 16rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.raffleLine {
+    width: 100%;
+    margin-top: 1rem;
+    border-bottom: none;
+    border-top: 0.05rem solid var(--gray-color);
+}
+
+.raffleInfo {
+    width: 90%;
+    height: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleInfoInfo {
+    font-size: calc(1.1*var(--medium-font));
+    display: flex;
+    align-items: center;
+}
+
+.raffleInfoPayment{
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}
+
+.raffleInfoRank{
+    margin-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    height: 1.3rem;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.raffleInfoInfo_loading{
+    width:1rem;
+    height: 1rem;
+    display: flex;
+}
+
+.raffleInfoTitle {
+    font-size: 1.2rem;
+    color: var(--dark-gray-color);
+}
+
+.raffleInfoLeftTime {
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleLeftInfo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.raffleLeftTime {
+    font-size: 1.2rem;
+}
+
+.raffleInfoBulbOn {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.raffleInfoBulbOff {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--dark-gray-color);
+}
+
+.raffleInfoBulbLoading {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+    background-color: #fe8f38;
+}
+
+/* RAFFLE FOOTER */
+
+.raffleInfoFooter{
+    width: 100%;
+    padding-top: 1rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.raffleInfoHelpIcon{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    margin-left:0.5rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.raffleInfoFooter_top {
+    width: 95%;
+    height: 2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleInfoFooterInputWhole{
+    width: 45%;
+    height: 100%;
+    margin-left: -2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleInputBox {
+    width: 80%;
+    height: 100%;
+    border: 0.1rem solid black;
+    text-align: center;
+    font-size: calc(1.1*var(--big-font));
+}
+
+.raffleInfoFooterPriceBox{
+    font-size: calc(1.1*var(--big-font));
+    display: flex;
+    align-items: center;
+}
+
+.raffleInfoFooterButton {
+    width: 100%;
+    color: white;
+    height: 2.2rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.raffleInfoFooterLoadingButton{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.raffleInfoFooter_singleLine{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1.1*var(--big-font));
+}
+
+.raffleInfoFooter_singleLineLoading{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.raffleInfoWinnerSmall{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: var(--medium-font);
+    color: var(--dark-gray-color);
+}
+
+/* RAFFLE FIND */
+
+.raffleFindWholeBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleFindBox{
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleFindTotalSelectBox {
+    width: 100%;
+    height: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.raffleFindInputBoxWhole {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.raffleFindInputBox {
+    width: 70%;
+    height: 100%;
+    border-radius: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0.4rem;
+    background-color: white;
+}
+
+.raffleFindIcon {
+    width: var(--medium-padding);
+    height: var(--medium-padding);
+    cursor: pointer;
+}
+
+.raffleFindInput {
+    margin-left: var(--medium-font);
+    width: 100%;
+    height: var(--medium-padding);
+    font-size: var(--big-font);
+    border: 0;
+}
+
+.raffleFindInput:focus {
+    outline: none;
+}
+
+.raffleFindInput:focus {
+    outline: none;
+}
+
+.raffleFindInput::placeholder {
+    color: var(--dark-gray-color);
+}
+
+.raffleFindInput:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.raffleFindTotal {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: var(--big-font);
+}
+
+.raffleFindSelect {
+    width: 60%;
+    height: 100%;
+    font-size: var(--big-font);
+    text-align: center;
+}
+
+.raffleFindSelect:focus {
+    outline: none;
+}
+
+.raffleFindOption {
+    font-size: 1rem;
+}
+
+.raffleFindOption2 {
+    font-size: 0.9rem;
+}
+
+.raffleFindFilterWhole{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.raffleFindFilterWholeCheckTitle{
+    font-size: var(--medium-font);
+    cursor: pointer;
+}
+
+.raffleFindFilterWholeCheck{
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.raffleFindFilterCheckWhole {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 2rem;
+    align-items: center;
+}
+
+.raffleFindFilterCheckBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: var(--medium-padding);
+}
+
+.raffleFindFilterCheckTitle {
+    font-size: var(--medium-font);
+}
+
+.raffleFindFilterReset {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.raffleFindFilterCheck {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.raffleFindFilterCheckBox2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: var(--medium-padding);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.raffleFindFilterReset2 {
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+
+
+.raffleFindBody {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.raffleFindFilterBox {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleFindFilterRange {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    align-items: center;
+}
+
+.raffleFindFilterRangeBox {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleFindFilterSelect2 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: var(--big-font);
+}
+
+.raffleFindFilterRangeTitle {
+    width: 25%;
+    font-size: var(--big-font);
+}
+
+.raffleFindCenterLine {
+    width: 100%;
+    border: dashed 0.01rem white;
+}
+
+.raffleDesBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 80%;
+    margin-top: 2rem;
+}
+
+.raffleDesTitle {
+    height: 10%;
+    width: 100%;
+    font-size: calc(var(--big-font)*1.5);
+    text-align: center;
+    margin-top: 2%;
+}
+
+.raffleFindPreviewBox {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleFindPreviewHeader {
+    width: 100%;
+    height: 20%;
+    font-size: var(--big-font);
+    display: flex;
+    align-items: center;
+}
+
+.raffleFindPreviewImageBox {
+    width: 100%;
+    height: 85%;
+    display: grid;
+    grid-gap: calc(0.75 * var(--medium-padding));
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.raffleDes {
+    /* height: 90%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.raffleDesSpan {
+    margin-bottom: 1rem;
+    color: var(--red-color);
+    font-size: 0.85rem;
+    line-height: 1.1rem;
+}
+
+.raffleSmallLoadingBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.raffleSmallLoading{
+    width: 3rem;
+    height: 3rem;
+}
+
+.raffleSmallDetailsNoticeBox {
+    width: 100%;
+    height: 22.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgba(59, 201, 120,0.25); */
+    background-color: #d0f1dd;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.raffleSmallDetailsNoticeBoxContent {
+    padding: 0rem 1rem 0rem 0.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--small-font);
+    overflow-y: scroll;
+}
+
+.raffleSmallDetailsNoticeBoxContent::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.raffleSmallDetailsNoticeBoxContent::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.raffleSmallDetailsNoticeBoxContent_title {
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top:1.6rem;
+    display: flex;
+    justify-content: center;
+    color: var(--red-color);
+}
+
+.raffleSmallDetailsNoticeBoxContent_title:nth-child(1) {
+    margin-top: 0rem;
+    color: black;
+}
+
+.raffleSmallDetailsNoticeBoxContent_desc {
+    font-size: var(--medium-font);
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    color: black;
+}
+
+.raffleSmallDetailsNoticeBoxContent_notice {
+    font-size: var(--medium-font);
+    line-height: 1.5rem;
+    color: var(--red-color);
+    margin-top: 1.5rem;
+}
+
+/* rafffleNFTInfo */
+.raffleNFTInfoBox {
+    width: 100%;
+    height: 25rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleNFTInfoSNSBox{
+    width: 80%;
+}
+
+.raffleNFTInfoMetaBox{
+    width: 100%;
+    height: 20rem;
+}
+
+/* raffleParticipants */
+
+.raffleParticipantsBox {
+    width: 100%;
+    height: 2rem;
+    margin-top: 1.5rem;
+}
+
+.raffleParticipantsBox2 {
+    width: 100%;
+    padding-left: 4%;
+    height: 21rem;
+    overflow-y: scroll;
+}
+
+.raffleParticipantsBox2::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.raffleParticipantsBox2::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.raffleParticipantsTable {
+    color: black !important;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.raffleParticipantsTable2 {
+    color: black !important;
+    width: 95%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.raffleParticipantsTableTd {
+    color: black;
+    text-align: center;
+    height: 3rem;
+    width: 100%;
+}
+
+.raffleParticipantsTableTd:nth-child(1) {
+    text-align: left;
+}
+
+.raffleParticipantsTableTd:nth-child(2) {
+    text-align: right;
+}
+
+.raffleParticipantsTableThead {
+    width: 100%;
+    height: 100%;
+}
+
+.raffleParticipantsTableTheadTr {
+    width: 100%;
+    height: 100%;
+}
+
+.raffleParticipantsTableTbodyTr {
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.01rem solid gray;
+}
+
+.raffleParticipantsTableTbodyTr:last-child {
+    width: 100%;
+    height: 100%;
+    border-bottom: none;
+}
+
+.raffleParticipantsTableTbody {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleParticipantsTableTh:nth-child(1) {
+    width: 60%;
+    font-weight: normal;
+    font-size: var(--big-font);
+    padding-left: 0.5rem;
+    display: table-cell;
+    vertical-align: baseline;
+    text-align: left;
+}
+
+.raffleParticipantsTableTh:nth-child(2) {
+    width: 40%;
+    font-weight: normal;
+    font-size: var(--big-font);
+    display: table-cell;
+    vertical-align: baseline;
+    text-align: right;
+}
+
+/* createRaffle */
+
+.createRaffle_small_WholeBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.createRaffle_CreateDetailsBox{
+    width: 100%;
+    height: 24rem;
+    padding: 1rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.createRaffle_CreateDetailsEachBox{
+    width: 95%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createRaffle_CreateDetailsNoticeBox{
+    width: 100%;
+    height: 57%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(59, 201, 120,0.25);
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 0.5rem;
+}
+
+.createRaffle_CreateDetailsEach{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createRaffle_CreateDetailsEachLabel{
+    width: 24%;
+    font-size: 1.2rem;
+}
+
+.createRaffle_CreateDetailsInputBox{
+    width: 74%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createRaffle_CreateDetailsInput_long{
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 0.1rem black solid;
+}
+
+.createRaffle_CreateDetailsInput_short{
+    width: 50%;
+    height: 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 0.1rem black solid;
+}
+
+.createRaffle_CreateDetailsSelectMethodBox{
+    width: 47%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 0.2rem;
+
+    background-color: rgba(0,0,0,0.2);
+}
+
+.createRaffle_CreateDetailsSelectMethodEach_selected{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--medium-font);
+    border-radius: 1rem;
+    position: relative;
+
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.createRaffle_CreateDetailsSelectMethodEach{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--medium-font);
+    border-radius: 1rem;
+    color: var(--dark-gray-color);
+    cursor: pointer;
+}
+
+.createRaffle_CreateDetailsSelectMethodEachLogoBox{
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent{
+    width: 100%;
+    padding: 0rem 1rem 0rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    font-size: var(--small-font);
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent_title{
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    color: var(--red-color);
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent_title:nth-child(1){
+    margin-top: 0rem;
+    color: black;
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent_desc{
+    font-size: var(--medium-font);
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent_notice{
+    font-size: var(--medium-font);
+    line-height: 1.5rem;
+    color: var(--red-color);
+    margin-bottom: 0.5rem;
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.createRaffle_CreateBox{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.createRaffle_CreateSign{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.createRaffle_CreateSignInput{
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.createRaffle_CreateSignSpan{
+    margin-left: 0.5rem;
+    font-size: var(--medium-font);
+}
+
+.createRaffle_CreateButton{
+    width: 100%;
+    color: white;
+    height: 2.2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createRaffleLoadingBox{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+/* MY RAFFLE */
+
+.myRaffleHeader{
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myRaffleStatusBtnBox {
+    width: 50%;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.myRaffleStatusBtn {
+    width: 7rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    border-radius: 1.25rem;
+    background-color: transparent;
+    color: white;
+    font-size: calc(1.2*var(--medium-font));
+}
+
+.myRaffleStatusBtnSelected {
+    background-color: var(--purple-color);
+}
+
+.myRaffleSelect{
+    width: 30%;
+    height: 2rem;
+    text-align: center;
+    font-size: calc(1.2*var(--medium-font));
+}
+
+.myRaffleWholeBox{
+    width: 100%;
+    height: 88%;
+    padding: 1% 2%;
+    overflow-y: scroll;
+}
+
+.myRaffleWholeBox::-webkit-scrollbar {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--dark-gray-color);
+}
+
+.myRaffleWholeBox::-webkit-scrollbar-thumb {
+    width: 0.15rem;
+    height: 0.15rem;
+    background: var(--gray-color);
+}
+
+.myRaffleResetButton{
+    width: 1.3rem;
+    height: 1.3rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    /* .raffleFindCenterLine,
+    .raffleFindPreviewBox {
+        display: none;
+    } */
+
+    .raffleWholeBox {
+        width: 100%;
+        height: 92%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: scroll;
+        padding: 0;
+    }
+
+    .raffleWholeBox::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+        background: var(--dark-gray-color);
+    }
+
+    .raffleWholeBox::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+        background: var(--gray-color);
+    }
+
+    .raffleWholeLoading{
+        width: 100%;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    
+    .raffleWholeLoadingBox{
+        width:8rem;
+        height: 8rem;
+    }
+    
+    .raffleWholeLoadingSpan{
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, .8);
+        font-size: var(--big-font)
+    }
+
+    .raffleBigBox {
+        width: 95%;
+        margin-left: 1%;
+        margin-right: 1%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: calc(2*var(--medium-padding)) ;
+    }
+
+    .raffleEachBox {
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+    }
+
+    .raffleImg {
+        width: 45%;
+        height: 100%;
+    }
+
+    .raffleImg_width{
+        width: 45%;
+        height: 34.7rem;
+    }
+
+    .raffleImg_height{
+        width: 45%;
+        height: 34.7rem;
+    }
+
+    .raffleDescBox {
+        width: 70%;
+        padding: 3rem;
+    }
+
+    .rafflePriceImg {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1.5rem;
+    }
+
+    .raffleRemainTime,
+    .raffleAlmostEnd,
+    .raffleTimeOut,
+    .raffleTimeRaffling {
+        font-size: var(--medium-font);
+    }
+
+    .raffleTimeLoading{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .raffleTimeLoadingSpan{
+        margin-left: 1.5rem;
+    }
+
+    .raffleTimeBoxImage{
+        width: 2.6rem;
+        height: 2.6rem;
+        margin-right: 2rem;
+    }
+
+    .raffleDetailBox{
+    border-radius:var(--medium-padding);
+    padding: var(--medium-padding);
+    }
+
+    .raffleFindHeader {
+        height: 20%;
+    }
+
+    .raffleFindTotalSelectBox{
+        height: 4rem;
+    }
+    
+    .raffleFindFilterRange,
+    .raffleFindInputBoxWhole {
+        height: 8rem;
+    }
+
+    .raffleFindSelect {
+        width: 40%;
+        height: 80%;
+        font-size: var(--medium-font);
+        text-align: center;
+    }
+
+    .raffleFindInputBox {
+        width: 70%;
+        height: 100%;
+        border-radius: 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem calc(0.75 * var(--medium-padding));
+        background-color: white;
+    }
+
+    .raffleFindBody {
+        width: 100%;
+        height: 78%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .raffleFindFilterBox {
+        width: 100%;
+        height: 35%;
+    }
+
+    .raffleFindIcon {
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+    }
+
+    .raffleFindInput {
+        margin-left: calc(0.75 * var(--medium-padding));
+        width: 100%;
+        height: 100%;
+        font-size: var(--big-font);
+        border: 0;
+    }
+
+    .raffleFindSelect:focus {
+        outline: none;
+    }
+
+    .raffleFindOption {
+        font-size: 2rem;
+    }
+
+    .raffleFindFilterCheck {
+        margin-left: var(--medium-padding);
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .raffleFindFilterReset {
+        margin-left: var(--medium-padding);
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .raffleFindListBox {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: scroll;
+    }
+
+    .paginationFooter {
+        width: 100%;
+        height: 8%;
+    }
+
+    .raffleFindListBox::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+        background-color: var(--dark-gray-color);
+    }
+
+    .raffleFindListBox::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+        background-color: var(--gray-color);
+    }
+
+    .raffleFindListGrid {
+        width: 95%;
+        margin-right: 2%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-gap: var(--medium-padding);
+    }
+
+    .raffleFindIcon {
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+    }
+
+    .raffleFindInputBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 2%;
+    }
+
+    .raffleFindInput {
+        margin-left: calc(.75 * var(--medium-padding));
+        width: 100%;
+        height: 100%;
+        font-size: var(--big-font);
+        border: 0;
+    }
+
+    .raffleDetailHeader {
+        height: 24rem;
+    }
+
+    .raffleDetailImgBox {
+        width: 24rem;
+        height: 24rem;
+        display: flex;
+    }
+
+    .raffleDetailImgBox_width {
+        width: 24rem;
+        height: 24rem;
+        align-items: center;
+    }
+
+    .raffleDetailImgBox_height {
+        width: 24rem;
+        height: 24rem;
+        justify-content: center;
+    }
+
+    .raffleDetailHead {
+        width: 62rem;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .raffleTab {
+        font-size: var(--big-font);
+        border-radius: 4rem;
+    }
+
+    .raffleTabBox {
+        height: 7%;
+        margin-top: 3rem;
+    }
+
+    .raffleInfoBox {
+        height: 49%;
+        margin-top: 3rem;
+    }
+
+.raffleInfoPayment{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+}
+
+    .raffleLeftInfo {
+        font-size: var(--big-font);
+        width: auto;
+    }
+
+    .raffleInfoBulbOn,
+    .raffleInfoBulbOff,
+    .raffleInfoBulbLoading {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 3rem;
+    }
+
+    .raffleInfoLeftTime {
+        height: 20%;
+    }
+
+    .raffleLeftTime {
+        font-size: var(--big-font);
+    }
+
+    .raffleInfoTitle {
+        font-size: var(--big-font);
+    }
+
+    .raffleInfo {
+        height: 15%;
+    }
+
+    .raffleInfoInfo_loading{
+        width:3.5rem;
+        height:3.5rem;
+        display: flex;
+    }
+
+    .raffleInfoRank{
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-left: 2rem;
+        height: 5rem;
+    }
+
+    .raffleWinnerBox {
+        height: 10%;
+        font-size: var(--big-font);
+        margin-top: 3rem;
+    }
+
+    .raffleInputBox {
+        font-size: calc(1.2*var(--medium-font));
+    }
+
+    .raffleBuyInfo {
+        height: 7%;
+        font-size: calc(1.2*var(--medium-font));
+        margin-top: 3rem;
+    }
+
+    .raffleBuyBtn {
+        height: 7%;
+        font-size: var(--medium-font);
+        margin-top: 3rem;
+    }
+
+    .raffleDesBox {
+        margin-top: 5rem;
+    }
+
+    .raffleDesSpan {
+        margin-bottom: 3rem;
+        font-size: var(--medium-font);
+        line-height: 3.6rem;
+    }
+
+    .raffleLine {
+        margin-top: 3rem;
+    }
+
+    .raffleParticipantsBox {
+        width: 100%;
+        height: 6rem;
+        margin-top: 4rem;
+    }
+
+    .raffleParticipantsTableTh:nth-child(1) {
+        padding-left: 3rem;
+    }
+
+    .raffleParticipantsTableTh:nth-child(2) {
+        padding-right: 3rem;
+    }
+
+    .raffleParticipantsBox2 {
+        height: 72.5rem;
+    }
+
+    .raffleParticipantsBox2::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+        background: var(--gray-color);
+    }
+    
+    .raffleParticipantsBox2::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+        background: var(--dark-gray-color);
+    }
+
+    .raffleParticipantsTableTd {
+        height: 12.5rem;
+        font-size: calc(var(--medium-font)*1.2);
+    }
+
+    .raffleParticipantsTableTbody {
+        height: 12.5rem;
+    }
+
+    .raffleSmallLoading {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .raffleFindPreviewBox {
+        height: 62%;
+    }
+
+    .raffleIdBox {
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 12rem;
+        height: 4rem;
+        border-radius: 1rem;
+    }
+
+    .raffleFindBox{
+        height: 50rem;
+    }
+
+    .raffleFindFilterWholeCheck{
+        margin-left: 4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .raffleFindFilterReset2 {
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+
+    .raffleFavoriteBox{
+        top: 4.7rem;
+        right: 2rem;
+        width: 4.6rem;
+        height: 4.6rem;
+    }
+
+    .raffleDetailBox>.raffleIdBox{
+        top: 4rem;
+        right: 9rem;
+        width: 18rem;
+        height: 6rem;
+        border-radius: 1rem;
+    }
+    
+    .raffleDetailBox>.raffleIdBox > .raffleId{
+        font-size: var(--big-font);
+    }
+
+    .raffleSmallDetailsNoticeBox{    
+        border-radius: 2rem;
+        padding: 4rem 4rem 4rem 2rem;
+        height: 76rem;
+    }
+
+    .raffleSmallDetailsNoticeBoxContent{
+        width: 100%;
+        padding: 0rem 2rem 0rem 1rem;
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        font-size: var(--small-font);
+    }
+
+    .raffleSmallDetailsNoticeBoxContent_title{
+        width: 100%;
+        font-size: var(--big-font);
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        color: var(--red-color);
+    }
+
+    .raffleSmallDetailsNoticeBoxContent_title:nth-child(1) {
+        margin-top: 0rem;
+        color: black;
+    }
+    
+    
+    .raffleSmallDetailsNoticeBoxContent_desc{
+        font-size: var(--medium-font);
+        line-height: 5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .raffleSmallDetailsNoticeBoxContent_notice{
+        font-size: var(--medium-font);
+        line-height: 5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .raffleSmallDetailsNoticeBoxContent::-webkit-scrollbar {
+        width: 1rem;
+        height: 1rem;
+        background: var(--gray-color);
+    }
+    
+    .raffleSmallDetailsNoticeBoxContent::-webkit-scrollbar-thumb {
+        width: 1rem;
+        height: 1rem;
+        background: var(--dark-gray-color);
+    }
+    
+
+/* rafffleNFTInfo */
+.raffleNFTInfoBox {
+    width: 100%;
+    height: 84rem;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleNFTInfoSNSBox{
+    width: 80%;
+}
+
+.raffleNFTInfoMetaBox{
+    width: 100%;
+    height: 67rem;
+}
+
+/* RAFFLE FOOTER */
+
+.raffleInfoFooter{
+    width: 100%;
+    padding-top: 3rem;
+    height: 18rem;
+}
+
+.raffleInfoHelpIcon{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 1.5rem;
+    margin-left:1.5rem;
+}
+
+.raffleInfoFooter_top {
+    width: 95%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.raffleInputBox {
+    width: 80%;
+    height: 7rem;
+    border: 0.4rem solid black;
+    text-align: center;
+    font-size: calc(1.1*var(--big-font));
+}
+
+.raffleInfoFooterButton {
+    height: 7rem;
+    margin-top: 3rem;
+    font-size: calc(1.1*var(--big-font));
+}
+
+.raffleInfoFooterLoadingButton{
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.raffleInfoFooter_singleLine{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1.1*var(--big-font));
+}
+
+.raffleInfoFooter_singleLineLoading{
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 2rem;
+}
+
+/* createRaffle */
+
+.createRaffle_small_WholeBox{
+    border-radius:var(--medium-padding);
+    padding: var(--medium-padding);
+}
+
+.createRaffle_CreateDetailsBox{
+    width: 100%;
+    height: 76rem;
+    padding: 3rem 0rem 0rem;
+}
+
+.createRaffle_CreateDetailsNoticeBox{
+    border-radius: 2rem;
+    padding: 3rem 3rem 3rem 1.5rem;
+}
+
+.createRaffle_CreateDetailsEach{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createRaffle_CreateDetailsEachLabel{
+    width: 24%;
+    font-size: var(--big-font);
+}
+
+.createRaffle_CreateDetailsInput_long{
+    width: 100%;
+    height: 8rem;
+    font-size: var(--big-font);
+    border: 0.4rem black solid;
+}
+
+.createRaffle_CreateDetailsInput_short{
+    width: 50%;
+    height: 8rem;
+    font-size: var(--big-font);
+    border: 0.4rem black solid;
+}
+
+.createRaffle_CreateDetailsSelectMethodBox{
+    width: 47%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4rem;
+    padding: 1rem;
+
+    background-color: rgba(0,0,0,0.2);
+}
+
+.createRaffle_CreateDetailsSelectMethodEach_selected{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--medium-font);
+    border-radius: 4rem;
+    position: relative;
+
+    background-color: white;
+    color: black;
+}
+
+.createRaffle_CreateDetailsSelectMethodEach{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--medium-font);
+    border-radius: 1rem;
+    color: var(--dark-gray-color);
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent{
+    width: 100%;
+    padding: 0rem 2rem 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    font-size: var(--small-font);
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent_title{
+    width: 100%;
+    font-size: var(--big-font);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    color: var(--red-color);
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent_title:nth-child(1){
+    margin-top: 0rem;
+    color: black;
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent_desc{
+    font-size: var(--medium-font);
+    line-height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent_notice{
+    font-size: var(--medium-font);
+    line-height: 5rem;
+    color: var(--red-color);
+    margin-bottom: 2rem;
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+    background: var(--gray-color);
+}
+
+.createRaffle_CreateDetailsNoticeBoxContent::-webkit-scrollbar-thumb {
+    width: 1rem;
+    height: 1rem;
+    background: var(--dark-gray-color);
+}
+
+.createRaffle_CreateBox{
+    width: 100%;
+    height: 18rem;
+}
+
+.createRaffle_CreateSign{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.createRaffle_CreateSignInput{
+    width: 3rem;
+    height: 3rem;
+}
+
+.createRaffle_CreateSignSpan{
+    margin-left: 1rem;
+    font-size: var(--medium-font);
+}
+
+.createRaffle_CreateButton{
+    width: 100%;
+    color: white;
+    height: 8rem;
+    font-size: var(--big-font);
+}
+
+.createRaffleLoadingBox{
+    width: 5rem;
+    height: 5rem;
+}
+
+/* MY RAFFLE */
+
+.myRaffleHeader{
+    width: 100%;
+    height: 17.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myRaffleStatusBtnBox {
+    width: 100%;
+    height: 10rem;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.myRaffleStatusBtn {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 8rem;
+    margin-right: 0rem;
+    border-radius: 4rem;
+    background-color: transparent;
+    border: 0.01rem solid white;
+    color: white;
+    font-size: calc(1.2*var(--medium-font));
+}
+
+.myRaffleStatusBtnSelected {
+    background-color: var(--purple-color);
+    border: 0.01rem solid var(--purple-color);
+}
+
+.myRaffleSelect{
+    width: 40%;
+    height: 6rem;
+    align-self: flex-end;
+    text-align: center;
+    font-size: calc(1.2*var(--medium-font));
+}
+
+
+.myRaffleWholeBox{
+    width: 100%;
+    height: 83%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+    padding: 0;
+}
+
+.myRaffleWholeBox::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+    background: var(--dark-gray-color);
+}
+
+.myRaffleWholeBox::-webkit-scrollbar-thumb {
+    width: 1rem;
+    height: 1rem;
+    background: var(--gray-color);
+}
+
+.myRaffleResetButton{
+    width:5rem;
+    height: 5rem;
+    margin-right: 2rem;
+    align-self: flex-end;
+}
+
+}
